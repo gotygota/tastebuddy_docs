@@ -1,1 +1,61 @@
-site_name: My Docs
+site_name: Tastebuddy Documentation
+site_url: https://docs.tastebuddy.io
+copyright: Copyright &copy; 2024 Gautier Heins
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.footer
+  favicon: images/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      primary: teal
+      accent: deep orange
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: teal
+      accent: teal
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: teal
+      accent: deep orange
+
+plugins:
+  - privacy
+  - search
+  - open-in-new-tab
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - For admins:
+      - admin/index.md
+      - User management: admin/user_administration.md
+      - Products: admin/products.md
+      - Tasting protocols: admin/protocols.md
+  - For users:
+      - user/index.md
+      - Manageing your profile: user/profile.md
+      - Evaluate samples: user/tasting.md
