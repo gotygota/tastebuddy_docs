@@ -2,33 +2,33 @@
 
 ## Overview
 
-In order to gather analitics regarding the sensory profile of spirits and wines,
-wether punctually or following a timely evolution, Tastebuddy requires from the
-adminitrators a careful design of the tasting processess. The preparation work
-is made of three core components:
+In order to collect meaningful data on the sensory profile of spirits or wines
+efficiently, Tastebuddy requires administrators to carefully design the tasting
+process. There are three key components to this process:
 
-- **Tasters**: they are the direct users of the application and the people providing
-  their expertise on the evaluated samples;
+- **Tasters**: they are the direct users of the application and the people who
+  provide their expertise on the samples being evaluated;
 - **Products**: either wine or spirits, they are the samples on which the sensory
-  evaluation is conducted;
+  evaluation is performed;
 - **Tasting protocols**: they define the set of criteria (and associated weights)
-  the evaluation will focus on;
+  on which the evaluation will focus;
 
 !!! tip "Example protocols and products"
-    On account creation, a tasting protocol and example products are automatically
-    added for illustrative purposes. They can be safely used as is, modified or
-    deleted
+On account creation, a tasting protocol and example products are automatically
+added for illustrative purposes. They can be safely used as is, modified or
+deleted
 
 ## Getting started
-Tastebuddy has been designed to leave as much freedom as possible to the users in
-order to adapt to a maximum of use cases of the industry. Conceptually, a
-sensory evaluation relies on three basic building blocks, which are combined and
-mixed depending on the use case: a number of criteria, or characteristics the
-sensory analysis should focus on, assessors or taster to provide the expertise,
-and of course, sample(s) to evaluate.
+
+Tastebuddy has been designed to give users as much freedom as possible to adapt
+to a maximum number of practical use cases. Conceptually, a sensory evaluation
+is based on three basic building blocks that can be combined and mixed depending
+on the scenario: a set of criteria or characteristics that the sensory analysis
+should focus on, assessors or tasters to provide the expertise, and of course
+the sample(s) to be evaluated.
 
 These fundamental building blocks can be created, edited or combined to achieve
-a defined goal. 
+a defined goal.
 
 <figure markdown="span">
   ![Functional diagram](images/functional_diagram_2.png#only-light){ width="90%"}
@@ -36,11 +36,12 @@ a defined goal.
   <figcaption>Conceptual diagram of TasteBuddy functionning</figcaption>
 </figure>
 
-Although products can be created _on the fly_ (i.e. directly added at the moment
-of evaluating the product), careful preparation and experimental design should
-be carried out by the administrators before conducting sensory evaluation.
+Although products can be created _on the fly_ (i.e. added directly at the time
+of evaluation), careful preparation and experimental design should
+be performed by the administrators before conducting any sensory evaluation.
 
 ## Definitions
+
 The following words will be used along this documentation. Getting familiar with
 the concepts will help to understand the next pages.
 

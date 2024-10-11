@@ -7,6 +7,9 @@ theme:
   features:
     - navigation.indexes
     - navigation.footer
+    - content.tooltips
+  icon:
+    logo: material/library-shelves
   favicon: images/favicon.ico
   palette:
     - media: "(prefers-color-scheme)"
@@ -39,12 +42,22 @@ plugins:
   - glightbox
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - md_in_html
+  - abbr
   - attr_list
+  - admonition
   - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
   - toc:
       permalink: true
 

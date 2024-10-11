@@ -14,7 +14,7 @@ one day to the next. It is particularly important for industry professionals to 
 able to obtain reasonably objective data in order to make business decisions,
 monitor trends or experiment with new processes.
 
-TasteBuddy is a web application1 for comparative sensory analysis of wines and
+TasteBuddy is a web application for comparative sensory analysis of wines and
 spirits in both synchronous and asynchronous modes, guaranteeing the anonymity
 of both tasters and products. As an online tool, it is free from geographical
 and time constraints, while its anonymity allows users to express their opinions
