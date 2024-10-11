@@ -34,6 +34,8 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: deep orange
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - privacy
@@ -72,3 +74,7 @@ nav:
       - user/index.md
       - Manageing your profile: user/profile.md
       - Evaluate samples: user/tasting.md
+  - Result analysis:
+      - results/index.md
+      - Dashboards: results/dashboards.md
+      - Reading the charts: results/charts.md

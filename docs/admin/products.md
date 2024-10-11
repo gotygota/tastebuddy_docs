@@ -62,7 +62,7 @@ differences in their characterisation.
     
     :octicons-triangle-right-24: Name
 
-    :octicons-triangle-right-24: Category[^1]{ title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank" } (_either of Red, White, Rosé, Sparkling, Fortified, Other_)
+    :octicons-triangle-right-24: Category[^1]{ title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank" } (_Any category can be created_)
 
     :octicons-triangle-right-24: Brand
 
