@@ -93,23 +93,22 @@ differences in their characterisation.
 ![Product creation](images/product_dark.png#only-dark){ loading=lazy }
 </figure>
 
-Products can also be created directly from an existing tasting grid (during
-_one-off tastings_). Existing categories and products will be automatically
+Products can also be created directly from an existing tasting grid (for
+_one-off tastings_). Existing categories and products are automatically
 suggested to reduce the risk of duplication.
 
 !!! warning "Duplicate samples"
-    Currently, the sample related fields of a punctual tasting are not
-    automatically filled in, even when an existing product name is selected. Be
-    careful to not create duplicates, as the system will then treat them as
-    different products for results analyses.
+    Currently the sample related fields of a point tasting are not automatically
+    filled in, even if an existing product name is selected. Be careful not to
+    create duplicates, as the system will treat them as different products when
+    analysing the results.
 
-    In case some products are duplicates and mergeing them is necessary, please get
-    in touch with us [using this form](https://tastebuddy.io/contact/) or any other
-    mean linked to your account.
+    If some products are duplicates and need to be merged, please contact us using
+    [using this form](https://tastebuddy.io/contact/) or any other means linked to your account.
 
 ## Product information update
 
-Products can be updated by clicking `Edit` on the relevant line in the product
+Products can be updated by clicking `Edit` on the relevant row in the product
 table available on the above page.
 
 !!! tip "Filling in the additional information for further analysis"

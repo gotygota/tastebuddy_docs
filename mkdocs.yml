@@ -72,7 +72,7 @@ nav:
       - Tasting protocols: admin/protocols.md
   - For users:
       - user/index.md
-      - Manageing your profile: user/profile.md
+      - Manage your profile: user/profile.md
       - Evaluate samples: user/tasting.md
   - Result analysis:
       - results/index.md
