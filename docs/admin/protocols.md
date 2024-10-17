@@ -41,9 +41,9 @@ section below](protocols.md#tasting-grid).
     
     :octicons-triangle-right-24: **Name**
 
-    :octicons-triangle-right-24: **Category**: _used to group criteria according to a common characteristic, such as nose or palate for example_;
+    :octicons-triangle-right-24: **Category**: used to group criteria according to a common characteristic, such as nose or palate for example;
 
-    :octicons-triangle-right-24: **Description** (optional): used to provide a help text on the tasting sheet regarding the definition of the criterion.
+    :octicons-triangle-right-24: **Description** (optional): used to provide a help text on the tasting sheet.
 
     :octicons-triangle-right-24: **Scoring scale**: takes a minimum score, a maximum score, and steps between the two extremes which will build the scores available to the tasters. For
     example, a scale from 1 to 10 by steps of 1 will allow tasters to chose any
@@ -56,13 +56,19 @@ To create a new tasting criterion, go to [https://tastebuddy.io/protocols/](http
  or click on `Protocols` in the left side bar or top right menu, and click on 
 `#!yaml + Add criterion` above the top-most table.
 
-<figure markdown="span">
-![Criterion creation](images/criteria_creation.png#only-light){ loading=lazy }
-![Criterion creation](images/criteria_creation_dark.png#only-dark){ loading=lazy }
-</figure>
+=== "Access"
 
-![Criterion creation](images/criteria_creation_2.png#only-light){ loading=lazy, width="400", align=left }
-![Criterion creation](images/criteria_creation_2_dark.png#only-dark){ loading=lazy, width="400", align=left }
+    <figure markdown="span">
+    ![Criterion creation](images/criteria_creation.png#only-light){ loading=lazy }
+    ![Criterion creation](images/criteria_creation_dark.png#only-dark){ loading=lazy }
+    </figure>
+
+=== "Creation form"
+
+    <figure markdown="span">
+    ![Criterion creation](images/criteria_creation_2.png#only-light){ loading=lazy, width="400", align=left }
+    ![Criterion creation](images/criteria_creation_2_dark.png#only-dark){ loading=lazy, width="400", align=left }
+    </figure>
 
 For example, a criterion defined as:
 
@@ -70,9 +76,7 @@ For example, a criterion defined as:
 - Category: Nose
 - Name: Expressiveness
 - Description:
-    Does the spirit clearly show
-    identifiable characteristics
-    for... # (1)
+    Does the spirit clearly show identifiable characteristics for... # (1)
 - Lowest score: 1
 - Highest score: 10
 - Steps: 1
@@ -153,20 +157,34 @@ To create a new tasting sheet, go to [https://tastebuddy.io/protocols/](https://
  or click on `Protocols` in the left sidebar or top right menu, and click on 
 `+ Add Tasting Sheet` above the second table.
 
-<figure markdown="span">
-![Sheet creation](images/sheet_creation.png#only-light){ loading=lazy }
-![Sheet creation](images/sheet_creation_dark.png#only-dark){ loading=lazy }
-</figure>
+=== "Access"
 
-![Sheet creation](images/sheet_creation_2.png#only-light){ loading=lazy, width="52%", align=left }
-![Sheet creation](images/sheet_creation_2_dark.png#only-dark){ loading=lazy, width="52%", align=left }
+    <figure markdown="span">
+    ![Sheet creation](images/sheet_creation.png#only-light){ loading=lazy }
+    ![Sheet creation](images/sheet_creation_dark.png#only-dark){ loading=lazy }
+    </figure>
 
-On the new page, enter a name (_note that the name must be **unique**, i.e. if a
+=== "Creation form"
+
+    <figure markdown="span">
+    ![Sheet creation](images/sheet_creation_2.png#only-light){ loading=lazy, width="80%" }
+    ![Sheet creation](images/sheet_creation_2_dark.png#only-dark){ loading=lazy, width="80%" }
+    </figure>
+
+On the newly opened page, enter the following information:
+
+- **Name**: _note that the name must be **unique**, i.e. if a
 tasting sheet with the same name already exists, submitting the form will raise
-an error_), optionally a description, select the type of product the tasting
-sheet can be used for, as well as the characteristics the comments should refer
-to, if any. Finally select the criteria to be assigned to the tasting sheet and
-the position or order in which they should appear on the tasting grid.
+an error_;
+- **Description** (optional): a help text which will appear when selecting the
+sheet for tastings;
+- **Product type**: wether the tasting grid can be used for both or either of
+wines and spirits (_default to both_);
+- **Comments**: how often a text box should appear on the tasting sheet to allow
+for tasting notes - per tasting criterion, category, only once at the bottom or
+never (_default to per criterion category_)
+- **Criteria list**: criteria to be assigned to the tasting sheet and
+the position (i.e. the order) in which they should appear on the tasting grid.
 
 Any number of criteria can be used (click `+ Add Criterion` to add more
 fields). Only previously created criteria can be selected, and
@@ -174,6 +192,20 @@ it is not currently possible to create new criteria directly from this page. See
 [Adding a criterion section above](protocols.md#adding-a-criterion).
 
 Finally, click `Add` at the bottom right of the page to create the tasting sheet.
+
+!!! info "Regarding tasting notes"
+
+    ![Word cloud example](images/word_cloud.png#only-light){ loading=lazy, width="45%", align=right }
+    ![Word cloud example](images/word_cloud_dark.png#only-dark){ loading=lazy, width="45%", align=right }
+
+    The choice of `Comments` will result in different sorting of the word
+    analysis on the results dashboard. The image below displays an example of the
+    resulting word analysis with comments set per criterion category.
+
+    Note however that the **comments are not made mandatory to the
+    assessor**. In other words, when evaluating a sample, users can leave the Note
+    text box empty and still submit results. It is advisable to ask the tasters
+    to try their best to be thorough in their tasting notes.
 
 
 !!! tip "Ordering the criterion"
@@ -209,7 +241,7 @@ section](protocols.md#tasting-session) down below).
 
 Existing tasting sheets can be updated by clicking on `Edit` in the
 corresponding row of the tasting grid table. Any change will be reflected in
-existing results: for example, dashboards of existing results will show the
+existing results: for example, dashboards of results will show the
 current name of the tasting sheet, regardless of whether the name was different 
 when the results were saved.
 
@@ -259,66 +291,68 @@ products to be highlighted and a ranking to be established between them.
 
 ### Creating a tasting session
 
-Tasting sessions are linked to product types: To create a new tasting session, go
+Tasting sessions are associated with product types: To create a new tasting session, go
 to [https://tastebuddy.io/protocols/](https://tastebuddy.io/protocols/) or click on `#!yaml Protocols` in the left sidebar or
-top right menu, and click on either `+ Create Spirit Tasting Session` or `+ Create Wine Tasting Session` above the appropriate table.
+top right menu, and click on either `+ Create Spirits Tasting Session` or `+ Create Wine Tasting Session` above the appropriate table.
 
-<figure markdown="span">
-![Session creation](images/session_creation.png#only-light){ loading=lazy }
-![Session creation](images/session_creation_dark.png#only-dark){ loading=lazy }
-</figure>
+=== "Access"
 
-![Session creation](images/session_creation_2.png#only-light){ loading=lazy, width="390", align=left }
-![Session creation](images/session_creation_2_dark.png#only-dark){ loading=lazy, width="390", align=left }
+    <figure markdown="span">
+    ![Session creation](images/session_creation.png#only-light){ loading=lazy }
+    ![Session creation](images/session_creation_dark.png#only-dark){ loading=lazy }
+    </figure>
+
+=== "Creation form"
+
+    <figure markdown="span">
+    ![Session creation](images/session_creation_2.png#only-light){ loading=lazy, width="80%" }
+    ![Session creation](images/session_creation_2_dark.png#only-dark){ loading=lazy, width="80%" }
+    </figure>
 
 !!! warning "Wine VS Spirit tasting session"
-    Make sure you have selected the correct product type from the Protocol page. Only the products of
+    Make sure you have selected the correct product type on the Protocol page. Only the products of
     the selected product type [that have been previously created](products.md#product-creation)
-    and the tasting sheets that apply to the considered product type will be 
-    available in the various drop down menus.
+    and the tasting sheets that apply to the product type in question will be 
+    available in the various drop-down menus.
 
-    A direct link to the other product type is available at the top of the page
-    in case of error.
+    In case of error, a direct link to the other product type is available at the top of the page.
 
 
 <br>
 On the newly opened page, enter the following information:
 
 - **Name**;
-- **Description** (optional): a description of the tasting session which will be
+- **Description** (optional): a description of the tasting session that will be
   displayed at the top of the page when tasters access the tasting. For example,
-tips or warnings regarding the products can be added here;
-- **Tasting sheet**: select the tasting grid to be used to evaluate the samples.
+tips or warnings about the products can be added here;
+- **Tasting sheet**: select the tasting grid that will be used to evaluate the samples.
   Only [previously created tasting sheets](protocols.md#adding-a-tasting-sheet)
-  corresponding to the selected product type will appear in the drop down menu;
-- **Scheduled date**: the planned date of the tasting session, from which the
-session will be accessible to assessors;
-- **Accessible for**: how many days after the scheduled date should the tasting
-  session be available (see note below).
-- **Hide sample names**: activate the switch to replace the name of the samples
-  by their serving order. Note: to display the name of the samples on the
-results dashboard, edit the tasting session once all results have been submitted
-and deactivate the switch
+  corresponding to the selected product type will appear in the drop-down menu;
+- **Scheduled date**: the intended date of the tasting session, from which the
+session will be accessible to the judges;
+- **Accessible for**: how many days after the scheduled date the tasting
+  session should be available (see note below).
+- **Hide sample names**: check this box to replace the names of the samples
+  with the order in which they are order;[^1]
 - **Assigned tasters**: select all the users who should participate in the
-tasting session[^1]
-- **Samples**: from the drop down menu, select the samples to be added to the
-tasting session and assign them an order by filling the `Position` field next to
+tasting session;[^2]
+- **Samples**: from the drop-down menu, select the samples to be added to the
+tasting session and assign an order to them by filling in the `Position` field next to
 them. Any number of spirits (respectively wines) can be added by clicking `+ Add spirit`
 (respectively `+ Add wine`)
 
 !!! info "About scheduled date and availability"
-    Any tasting session is accessible only from its scheduled date. It will not
-    appear on any user's homepage before that specified date. The dashboard
-    displaying the results, whether for a taster or for the admin themselves, won't
-    be accessible either before either of these two conditions is fulfilled:
+    Each tasting session is only accessible from its scheduled date. It will not
+    appear on any user's home page before that scheduled date. The dashboard that
+    displays the results, whether it's for a taster or for the administrator
+    himself, will also not be accessible until one of these two conditions is met:
 
     1. All assigned tasters have completed the session and submitted results
-    2. The delay specified in the field `Accessible for (days)`, calculated from
-       the scheduled date, has passed.
+    2. The delay specified in the `Accessible for (days)` field, calculated from
+       the scheduled date, has elapsed.
 
     Once a taster has completed a tasting session and submitted their results,
-    they won't be able to make any modification to their results, nor will they be
-    able to access the tasting session anymore.
+    they won't be able to make any modification to their records or to access the tasting session anymore.
 
 !!! tip "Ordering the samples"
     The `#!yaml Position` field determines the order in which the samples  
@@ -346,9 +380,9 @@ them. Any number of spirits (respectively wines) can be added by clicking `+ Add
 
 !!! tip "Following up the tasters progress"
     The progress of the assigned tasters can be followed live by the
-    administrators. From the [homepage](https://tastebuddy.io), in the **TASTING
-    PROGRESS** card, click the {++Progress++} button next to the corresponding
-    tasting session to display all the tasters progress.
+    administrators. From the [home page](https://tastebuddy.io), in the **TASTING
+    PROGRESS** card, click on the {++Progress++} button next to the corresponding
+    tasting session to display the status of all the tasters.
 
     <figure markdown="span">
     ![session progress](images/session_home.png#only-light){ loading=lazy, width="80%" }
@@ -356,6 +390,10 @@ them. Any number of spirits (respectively wines) can be added by clicking `+ Add
     </figure>
 
 
-[^1]: Currently only users with an account can be invited to a tasting session.
+[^1]: Note: to show the sample names in the
+results dashboard, edit the tasting session after all results have been submitted
+and uncheck the box;
+[^2]: Currently only users with an account can be invited to a tasting session.
     Further development of TasteBuddy will open tasting sessions to _Anonymous
     users_
+

@@ -71,7 +71,7 @@ nationality, and gender using the quick form. Update all relevant data and click
 
 !!! tip "About personal information"
     It is strongly recommended that users fill out their personal information,
-    as this can provide valuable information about taste sensitivities and consumer
+    as this can provide valuable insights about taste sensitivities and consumer
     profiling in the long run. Encourage the users to do so!
 
 ### Role
