@@ -4,11 +4,14 @@ copyright: Copyright &copy; 2024 Gautier Heins
 
 theme:
   name: material
+  custom_dir: overrides
   features:
-    - navigation.indexes
-    - navigation.footer
     - content.tooltips
     - content.code.annotate
+    - header.autohide
+    - announce.dismiss
+    - navigation.indexes
+    - navigation.footer
   icon:
     logo: material/library-shelves
   favicon: images/favicon.ico
