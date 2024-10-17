@@ -970,8 +970,8 @@ section below</a>.</p>
 <hr />
 <p>A criterion takes the following attributes:</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Name</strong></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Category</strong>: <em>used to group criteria according to a common characteristic, such as nose or palate for example</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong> (optional): used to provide a help text on the tasting sheet regarding the definition of the criterion.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Category</strong>: used to group criteria according to a common characteristic, such as nose or palate for example;</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong> (optional): used to provide a help text on the tasting sheet.</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Scoring scale</strong>: takes a minimum score, a maximum score, and steps between the two extremes which will build the scores available to the tasters. For
 example, a scale from 1 to 10 by steps of 1 will allow tasters to chose any
 score in the range 1, 2, 3, 4... 10.</p>
@@ -982,19 +982,27 @@ score in the range 1, 2, 3, 4... 10.</p>
 <p>To create a new tasting criterion, go to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a>
  or click on <code>Protocols</code> in the left side bar or top right menu, and click on 
 <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">+ Add criterion</span></code> above the top-most table.</p>
-<figure>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Access</label><label for="__tabbed_1_2">Creation form</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown="span">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation.png#only-light" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation_dark.png#only-dark" /></a>
-</figure>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2.png#only-light" width="400" /></a>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2_dark.png#only-dark" width="400" /></a></p>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure markdown="span">
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2.png#only-light" width="400" /></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2_dark.png#only-dark" width="400" /></a>
+</figure></p>
+</div>
+</div>
+</div>
 <p>For example, a criterion defined as:</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Nose</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Expressiveness</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Description</span><span class="p">:</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Does the spirit clearly show</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">identifiable characteristics</span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">for...</span><span class="w"> </span><span class="c1"># (1)</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Does the spirit clearly show identifiable characteristics for...</span><span class="w"> </span><span class="c1"># (1)</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Lowest score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Highest score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Steps</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
@@ -1066,23 +1074,54 @@ associated with an ordered list of samples for comparative tastings.</p>
 <p>To create a new tasting sheet, go to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a>
  or click on <code>Protocols</code> in the left sidebar or top right menu, and click on 
 <code>+ Add Tasting Sheet</code> above the second table.</p>
-<figure>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Access</label><label for="__tabbed_2_2">Creation form</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown="span">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation.png#only-light" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation_dark.png#only-dark" /></a>
-</figure>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2.png#only-light" width="52%" /></a>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2_dark.png#only-dark" width="52%" /></a></p>
-<p>On the new page, enter a name (<em>note that the name must be <strong>unique</strong>, i.e. if a
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure markdown="span">
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2.png#only-light" width="80%" /></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2_dark.png#only-dark" width="80%" /></a>
+</figure></p>
+</div>
+</div>
+</div>
+<p>On the newly opened page, enter the following information:</p>
+<ul>
+<li><strong>Name</strong>: <em>note that the name must be <strong>unique</strong>, i.e. if a
 tasting sheet with the same name already exists, submitting the form will raise
-an error</em>), optionally a description, select the type of product the tasting
-sheet can be used for, as well as the characteristics the comments should refer
-to, if any. Finally select the criteria to be assigned to the tasting sheet and
-the position or order in which they should appear on the tasting grid.</p>
+an error</em>;</li>
+<li><strong>Description</strong> (optional): a help text which will appear when selecting the
+sheet for tastings;</li>
+<li><strong>Product type</strong>: wether the tasting grid can be used for both or either of
+wines and spirits (<em>default to both</em>);</li>
+<li><strong>Comments</strong>: how often a text box should appear on the tasting sheet to allow
+for tasting notes - per tasting criterion, category, only once at the bottom or
+never (<em>default to per criterion category</em>)</li>
+<li><strong>Criteria list</strong>: criteria to be assigned to the tasting sheet and
+the position (i.e. the order) in which they should appear on the tasting grid.</li>
+</ul>
 <p>Any number of criteria can be used (click <code>+ Add Criterion</code> to add more
 fields). Only previously created criteria can be selected, and
 it is not currently possible to create new criteria directly from this page. See
 <a href="./#adding-a-criterion">Adding a criterion section above</a>.</p>
 <p>Finally, click <code>Add</code> at the bottom right of the page to create the tasting sheet.</p>
+<div class="admonition info">
+<p class="admonition-title">Regarding tasting notes</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud.png#only-light" width="45%" /></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud_dark.png#only-dark" width="45%" /></a></p>
+<p>The choice of <code>Comments</code> will result in different sorting of the word
+analysis on the results dashboard. The image below displays an example of the
+resulting word analysis with comments set per criterion category.</p>
+<p>Note however that the <strong>comments are not made mandatory to the
+assessor</strong>. In other words, when evaluating a sample, users can leave the Note
+text box empty and still submit results. It is advisable to ask the tasters
+to try their best to be thorough in their tasting notes.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Ordering the criterion</p>
 <p>The <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Position</span></code> field determines the order in which the criteria<br />
@@ -1113,7 +1152,7 @@ section</a> down below).</p>
 <h3 id="updating-an-existing-tasting-sheet">Updating an existing tasting sheet<a class="headerlink" href="#updating-an-existing-tasting-sheet" title="Permanent link">&para;</a></h3>
 <p>Existing tasting sheets can be updated by clicking on <code>Edit</code> in the
 corresponding row of the tasting grid table. Any change will be reflected in
-existing results: for example, dashboards of existing results will show the
+existing results: for example, dashboards of results will show the
 current name of the tasting sheet, regardless of whether the name was different 
 when the results were saved.</p>
 <div class="admonition warning">
@@ -1150,63 +1189,69 @@ products to be highlighted and a ranking to be established between them.</p>
 </ul>
 </div>
 <h3 id="creating-a-tasting-session">Creating a tasting session<a class="headerlink" href="#creating-a-tasting-session" title="Permanent link">&para;</a></h3>
-<p>Tasting sessions are linked to product types: To create a new tasting session, go
+<p>Tasting sessions are associated with product types: To create a new tasting session, go
 to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a> or click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Protocols</span></code> in the left sidebar or
-top right menu, and click on either <code>+ Create Spirit Tasting Session</code> or <code>+ Create Wine Tasting Session</code> above the appropriate table.</p>
-<figure>
+top right menu, and click on either <code>+ Create Spirits Tasting Session</code> or <code>+ Create Wine Tasting Session</code> above the appropriate table.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Access</label><label for="__tabbed_3_2">Creation form</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown="span">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy" src="../images/session_creation.png#only-light" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy" src="../images/session_creation_dark.png#only-dark" /></a>
-</figure>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Session creation" loading="lazy," src="../images/session_creation_2.png#only-light" width="390" /></a>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Session creation" loading="lazy," src="../images/session_creation_2_dark.png#only-dark" width="390" /></a></p>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure markdown="span">
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy," src="../images/session_creation_2.png#only-light" width="80%" /></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy," src="../images/session_creation_2_dark.png#only-dark" width="80%" /></a>
+</figure></p>
+</div>
+</div>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Wine VS Spirit tasting session</p>
-<p>Make sure you have selected the correct product type from the Protocol page. Only the products of
+<p>Make sure you have selected the correct product type on the Protocol page. Only the products of
 the selected product type <a href="../products/#product-creation">that have been previously created</a>
-and the tasting sheets that apply to the considered product type will be 
-available in the various drop down menus.</p>
-<p>A direct link to the other product type is available at the top of the page
-in case of error.</p>
+and the tasting sheets that apply to the product type in question will be 
+available in the various drop-down menus.</p>
+<p>In case of error, a direct link to the other product type is available at the top of the page.</p>
 </div>
 <p><br>
 On the newly opened page, enter the following information:</p>
 <ul>
 <li><strong>Name</strong>;</li>
-<li><strong>Description</strong> (optional): a description of the tasting session which will be
+<li><strong>Description</strong> (optional): a description of the tasting session that will be
   displayed at the top of the page when tasters access the tasting. For example,
-tips or warnings regarding the products can be added here;</li>
-<li><strong>Tasting sheet</strong>: select the tasting grid to be used to evaluate the samples.
+tips or warnings about the products can be added here;</li>
+<li><strong>Tasting sheet</strong>: select the tasting grid that will be used to evaluate the samples.
   Only <a href="./#adding-a-tasting-sheet">previously created tasting sheets</a>
-  corresponding to the selected product type will appear in the drop down menu;</li>
-<li><strong>Scheduled date</strong>: the planned date of the tasting session, from which the
-session will be accessible to assessors;</li>
-<li><strong>Accessible for</strong>: how many days after the scheduled date should the tasting
-  session be available (see note below).</li>
-<li><strong>Hide sample names</strong>: activate the switch to replace the name of the samples
-  by their serving order. Note: to display the name of the samples on the
-results dashboard, edit the tasting session once all results have been submitted
-and deactivate the switch</li>
+  corresponding to the selected product type will appear in the drop-down menu;</li>
+<li><strong>Scheduled date</strong>: the intended date of the tasting session, from which the
+session will be accessible to the judges;</li>
+<li><strong>Accessible for</strong>: how many days after the scheduled date the tasting
+  session should be available (see note below).</li>
+<li><strong>Hide sample names</strong>: check this box to replace the names of the samples
+  with the order in which they are order;<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 <li><strong>Assigned tasters</strong>: select all the users who should participate in the
-tasting session<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-<li><strong>Samples</strong>: from the drop down menu, select the samples to be added to the
-tasting session and assign them an order by filling the <code>Position</code> field next to
+tasting session;<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+<li><strong>Samples</strong>: from the drop-down menu, select the samples to be added to the
+tasting session and assign an order to them by filling in the <code>Position</code> field next to
 them. Any number of spirits (respectively wines) can be added by clicking <code>+ Add spirit</code>
 (respectively <code>+ Add wine</code>)</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">About scheduled date and availability</p>
-<p>Any tasting session is accessible only from its scheduled date. It will not
-appear on any user's homepage before that specified date. The dashboard
-displaying the results, whether for a taster or for the admin themselves, won't
-be accessible either before either of these two conditions is fulfilled:</p>
+<p>Each tasting session is only accessible from its scheduled date. It will not
+appear on any user's home page before that scheduled date. The dashboard that
+displays the results, whether it's for a taster or for the administrator
+himself, will also not be accessible until one of these two conditions is met:</p>
 <ol>
 <li>All assigned tasters have completed the session and submitted results</li>
-<li>The delay specified in the field <code>Accessible for (days)</code>, calculated from
-   the scheduled date, has passed.</li>
+<li>The delay specified in the <code>Accessible for (days)</code> field, calculated from
+   the scheduled date, has elapsed.</li>
 </ol>
 <p>Once a taster has completed a tasting session and submitted their results,
-they won't be able to make any modification to their results, nor will they be
-able to access the tasting session anymore.</p>
+they won't be able to make any modification to their records or to access the tasting session anymore.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Ordering the samples</p>
@@ -1234,9 +1279,9 @@ creation form).</p>
 <div class="admonition tip">
 <p class="admonition-title">Following up the tasters progress</p>
 <p>The progress of the assigned tasters can be followed live by the
-administrators. From the <a href="https://tastebuddy.io">homepage</a>, in the <strong>TASTING
-PROGRESS</strong> card, click the <ins class="critic">Progress</ins> button next to the corresponding
-tasting session to display all the tasters progress.</p>
+administrators. From the <a href="https://tastebuddy.io">home page</a>, in the <strong>TASTING
+PROGRESS</strong> card, click on the <ins class="critic">Progress</ins> button next to the corresponding
+tasting session to display the status of all the tasters.</p>
 <p><figure markdown="span">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="session progress" loading="lazy," src="../images/session_home.png#only-light" width="80%" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="session progress" loading="lazy," src="../images/session_home_dark.png#only-dark" width="80%" /></a>
@@ -1246,9 +1291,14 @@ tasting session to display all the tasters progress.</p>
 <hr />
 <ol>
 <li id="fn:1">
+<p>Note: to show the sample names in the
+results dashboard, edit the tasting session after all results have been submitted
+and uncheck the box;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
 <p>Currently only users with an account can be invited to a tasting session.
 Further development of TasteBuddy will open tasting sessions to <em>Anonymous
-users</em>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+users</em>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
