@@ -106,7 +106,7 @@ suggested to reduce the risk of duplication.
     If some products are duplicates and need to be merged, please contact us using
     [using this form](https://tastebuddy.io/contact/) or any other means linked to your account.
 
-## Product information update
+## Updating product information
 
 Products can be updated by clicking `Edit` on the relevant row in the product
 table available on the above page.

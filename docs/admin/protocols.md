@@ -378,16 +378,17 @@ them. Any number of spirits (respectively wines) can be added by clicking `+ Add
     3. Peated Whisky - Peated Scotch Whisky #3
     4. Peated Whisky - Peated Scotch Whisky #4
 
-!!! tip "Following up the tasters progress"
-    The progress of the assigned tasters can be followed live by the
-    administrators. From the [home page](https://tastebuddy.io), in the **TASTING
-    PROGRESS** card, click on the {++Progress++} button next to the corresponding
-    tasting session to display the status of all the tasters.
+### Following up the tasters progress
 
-    <figure markdown="span">
-    ![session progress](images/session_home.png#only-light){ loading=lazy, width="80%" }
-    ![session progress](images/session_home_dark.png#only-dark){ loading=lazy, width="80%" }
-    </figure>
+The progress of the assigned tasters can be followed live by the
+administrators. From the [home page](https://tastebuddy.io), in the **TASTING
+PROGRESS** card, click on the {++Progress++} button next to the corresponding
+tasting session to display the status of all the tasters.
+
+<figure markdown="span">
+![session progress](images/session_home.png#only-light){ loading=lazy, width="80%" }
+![session progress](images/session_home_dark.png#only-dark){ loading=lazy, width="80%" }
+</figure>
 
 
 [^1]: Note: to show the sample names in the
