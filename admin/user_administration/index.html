@@ -871,38 +871,41 @@ either during tasting sessions or as punctual tastings.</p>
 <ol>
 <li><strong>Regular user</strong>: has access to all available tasting sheets, can perform
    punctual tastings (and thus add their own products) and be assigned tasting
-sessions. They cannot create their own tasting notes or modify existing ones,
-and can only view the details of the products they have created during the
-punctual tastings. A regular user can only view his own results (all others are
-anonymized).</li>
+   sessions. They cannot create their own tasting protocols (i.e. criterion,
+   tasting sheet or tasting session) or modify existing ones,
+   and can only view the details of the products they have created themselves.
+   A regular user can only view their own results (all others are
+   anonymized).</li>
 <li><strong>Administrator</strong>: in addition to all the rights of a regular user,
    administrators can create criteria, tasting sheets, tasting sessions and
-products. They can modify any existing record, whether created by themselves or
-by another user. They can view all non-anonymous results of regular users and
-products. Finally, administrators can invite new users, edit their profile, and
-promote to administrator role.</li>
+   products. They can modify any existing record, whether created by themselves or
+   by another user. They can view all non-anonymous results of regular users and
+   products. Finally, administrators can invite new users, edit their profile, and
+   promote to administrator role.</li>
 </ol>
 <p>There also exists one <code>SuperUser</code>, who supersed the administrators and whose
 role cannot be changed.</p>
 <p>The following sections assume that the user has administrator access.</p>
 <h2 id="adding-users">Adding users<a class="headerlink" href="#adding-users" title="Permanent link">&para;</a></h2>
-<p>New users can be added to your organization by sending them a unique link to create an account.</p>
+<p>New users can be added to your organisation by sending them a unique link to create an account.</p>
 <p>Go to <a href="https://tastebuddy.io/users/">https://tastebuddy.io/users/</a> or click
-<code>Users</code> in the left sidebar. In the <code>ADD USERS</code> section, enter the email address of
+<code>Users</code> in the left sidebar or top right menu <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"/></svg></span>. In the <code>ADD USERS</code> section, enter the email address of
 the user you want to invite, then click <code>Send</code> (one address at a time). The system
 will send a link to the specified email address that the user can follow to
-create their account and connect to the organization.</p>
+create their account and connect to the application.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User invitation section" loading="lazy" src="../images/user_invite.png#only-light" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User invitation section" loading="lazy" src="../images/user_invite_dark.png#only-dark" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Invitations have an expiration date</p>
-<p>The invitation sent to the email address contains a link that expires after 3
-days. If the expiration date has passed, you can resend an invitation to the
+<p>The invitation sent to the email address contains a link that expires after
+3 days. If the expiration date has passed, you can resend an invitation to the
 user by clicking the button next to their name at the bottom of the same page.</p>
-<p>Attempting to resend an invitation to an existing user or an email with a
-pending invitation will result in an error. If the email hasn't been received,
-use the table at the bottom of the page that shows pending and expired
-invitations to send a new link.</p>
+<p>Attempting to send a new invitation to an already registered email address
+(i.e. an email address to which an invitation has been sent in the past),
+whether it is still pending or has already expired, will result in an error.</p>
+<p>If the email hasn't been received or if the link has already expired, use the
+table at the bottom of the page that shows pending and expired invitations to
+send a new link.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2.png#only-light" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2_dark.png#only-dark" /></a></p>
 </div>
@@ -929,28 +932,28 @@ profiling in the long run. Encourage the users to do so!</p>
 <h3 id="role">Role<a class="headerlink" href="#role" title="Permanent link">&para;</a></h3>
 <p>Administrators can promote any regular user to the administrator role by
 checking the <code>Make admin</code> box. They will automatically get access to all pages and
-data of the organization account.</p>
+data of the organisation.</p>
 <p>Note that administrators cannot change the role of other administrators to
-regular user. The organization's <code>SuperUser</code> is the only user who can demote
+regular user. The organisation's <code>SuperUser</code> is the only user who can demote
 administrators to regular users.</p>
 <div class="admonition note">
 <p class="admonition-title">Switching SuperUser</p>
-<p>To assign the the SuperUser role to a new user, please <a href="https://tastebuddy.io/contact/">contact us</a>.</p>
+<p>To assign the SuperUser role to a new user, please <a href="https://tastebuddy.io/contact/">contact us</a>.</p>
 </div>
 <h3 id="login-information">Login information<a class="headerlink" href="#login-information" title="Permanent link">&para;</a></h3>
 <p>Only users themselves can update their own password and email
 address, by accessing their profile at
 <a href="https://tastebuddy.io/users/update/">https://tastebuddy.io/users/update/</a>. A
 new confirmation email will be sent to the new email address in order to
-confirm its validity.</p>
+confirm its validity before the change is effective.</p>
 <h2 id="users-deletion">User's deletion<a class="headerlink" href="#users-deletion" title="Permanent link">&para;</a></h2>
 <p>Since a user may have provided useful sensory information, their access may be
-revoked instead of simply deleting their account. A deactivated user will not be
-able to access any of the Tastebuddy sites. A deactivated account can also be
-reactivated without any loss of data.</p>
-<p>You can deactivate (or reactivate) a user's access to the platform by simply
-clicking on Deactivate (or Reactivate) in the user's table. To do this, click on
-<code>De/Re-activate</code>.</p>
+revoked instead of simply deleting their account. A deactivated user cannot log
+in to the platform anymore, and no licence fee incurs to deactivated accounts.</p>
+<p>However, deactivated accounts can also be reactivated without any loss of data,
+to reopen access to the platform to the users if needed.</p>
+<p>You can deactivate (or reactivate) a user by simply clicking on <code>Deactivate</code> (or
+<code>Reactivate</code>) in the user's table.</p>
 <div class="admonition danger">
 <p class="admonition-title">Actually deleting an account</p>
 <p>Results associated with a deactivated account will still appear in dashboards.

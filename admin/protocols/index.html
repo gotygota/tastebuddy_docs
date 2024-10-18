@@ -995,24 +995,19 @@
 
 
 <h1 id="tasting-protocols">Tasting protocols<a class="headerlink" href="#tasting-protocols" title="Permanent link">&para;</a></h1>
-<div class="admonition tools">
-<p class="admonition-title">Work in progress</p>
-<p>This site is still under construction. Please come back later for further
-information and documentation.</p>
-</div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Last building block of sensory evaluation, the tasting sheet or tasting grid
 defines the set of criteria the assessment should focus on. The creation of a
-tasting protocols can be divided in two steps (plus one extra optional):</p>
+tasting protocol can be divided in two steps (plus one extra optional):</p>
 <ol>
 <li>Creation of <strong>tasting criteria</strong>: these are the characteristics to which the
    tasters will assign a score;</li>
-<li>Creation of the <strong>tasting sheet</strong> or <strong>tasting grid</strong>: combining the previsouly
+<li>Creation of the <strong>tasting sheet</strong> or <strong>tasting grid</strong>: combining the previously
    created criteria, a tasting grid will be available for both one-off tastings
    and tasting sessions;</li>
 <li>(optional) Creation of a <strong>tasting session</strong>: by combining <a href="../products/">the products to
    be tasted</a>, a tasting sheet and assigning users, it allows for
-   the comparative tasting of a series of products.</li>
+   the comparative tasting of a series of products simultaneously.</li>
 </ol>
 <p>Note that <code>Regular Users</code> cannot create their own tasting criteria, sheets or 
 sessions.</p>
@@ -1021,9 +1016,9 @@ sessions.</p>
 <p>Tasting criteria are the characteristics that the tasters will score when
 evaluating samples. They are usually grouped by category, such as nose or
 palate, but any category can be created to suit specific applications. Tasting
-criteria can be used in multiple tasting grids. They are not independant of the
+criteria can be used in multiple tasting grids. They are independent of the
 product type and can be used for both wine and spirits (see <a href="./#tasting-grid">the tasting grid
-section below</a>.</p>
+section below</a>).</p>
 <div class="grid cards">
 <ul>
 <li>
@@ -1033,16 +1028,30 @@ section below</a>.</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Name</strong></p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Category</strong>: used to group criteria according to a common characteristic, such as nose or palate for example;</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong> (optional): used to provide a help text on the tasting sheet.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Scoring scale</strong>: takes a minimum score, a maximum score, and steps between the two extremes which will build the scores available to the tasters. For
-example, a scale from 1 to 10 by steps of 1 will allow tasters to chose any
-score in the range 1, 2, 3, 4... 10.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Scoring scale</strong>: takes a minimum score, a
+maximum score, and steps between the two extremes which will build the scores
+available to the tasters. For example, a scale from 1 to 9 by steps of 2 will 
+allow tasters to chose any score in the range 1, 3, 5, 7, and 9.</p>
 </li>
 </ul>
 </div>
+<div class="admonition info">
+<p class="admonition-title">Just About Right</p>
+<p>Wines and spirits are usually rated according to a set of selected criteria to
+which a rating scale is assigned. The rating scale is usually not used as an
+<del class="critic">intensity</del> scale, but as a <ins class="critic">"just about right"</ins> scale. The maximum score therefore
+corresponds to the exact expected expression of the criterion in question.</p>
+<p>For example, you might rate the sweetness of a particular product. In this case,
+a scale of 1 to 10 should not be understood as</p>
+<p>from <code>1: not sweet at all</code> to <code>10: excessively sweet</code></p>
+<p>but as</p>
+<p>from <code>1: too sweet or not sweet enough</code> to <code>10: perfectly sweet</code></p>
+</div>
 <h3 id="adding-a-criterion">Adding a criterion<a class="headerlink" href="#adding-a-criterion" title="Permanent link">&para;</a></h3>
-<p>To create a new tasting criterion, go to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a>
- or click on <code>Protocols</code> in the left side bar or top right menu, and click on 
-<code class="highlight"><span class="l l-Scalar l-Scalar-Plain">+ Add criterion</span></code> above the top-most table.</p>
+<p>To create a new tasting criterion, go to
+<a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a> or click on
+<code>Protocols</code> in the left side bar or top right menu <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"/></svg></span>, and
+click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">+ Add criterion</span></code> above the top-most table.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Access</label><label for="__tabbed_1_2">Creation form</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1082,9 +1091,9 @@ score in the range 1, 2, 3, 4... 10.</p>
 <p class="admonition-title">Updating criteria</p>
 <p>While criteria can be updated at any time, it is good practice to avoid changing
 the scoring scale and instead create a new criterion if it has already been used
-in a sensory evaluation to avoid comparing products that have not been evaluated
+in a sensory evaluation, to avoid comparing products that have not been evaluated
 with exactly the same protocol.</p>
-<p>In the backend, even though the score relative to the scale and the scale itself
+<p>In the backend, although the score relative to the scale and the scale itself
 are stored in the database at the moment the sensory analysis results are
 submitted, if the criterion is changed, the system will allow the comparison of
 products that may have used different scales.</p>
@@ -1093,29 +1102,31 @@ products that may have used different scales.</p>
 <p class="admonition-title">Defining the scoring scale</p>
 <p>By setting different maximum and minimum scores for different criteria, the
 importance of the criteria can be weighted. Higher available scores for a given
-criterion result in a greater influence on the total score for that criterion.
-However, some of the analyses (in particular the Principal Component Analysis on
-criteria) are performed on the value of the scores relative to their maximum,
-and for easier reading of some of the charts (such as the radar charts) they are
-also sometimes normalised to a scale from 0 to 1.</p>
+criterion result in a greater influence for that criterion on the overall
+evaluation. However, some of the analyses (in particular the Principal Component
+Analysis of the criteria) are performed on the value of the scores relative to
+their maximum (i.e. without taking into account the importance given to the
+criteria on the overall evaluation), and to make some of the charts (such as
+the radar charts) easier to read, the scores are sometimes normalised to a scale
+of 0-1.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Avoid middle ground</p>
-<p>A usual recommandation when defining a scoring scale for sensory evaluation is
-to not allow for the selection of the exact center. Avoid leaving the
-possibility to assign a score exactly in the middle of the maximum and minimum,
-to force the assessors to chose a side. For example, avoid fixing scoring scales
-like <code>[1, 2, 3, 4, 5]</code> (where 3 is the exact center). Instead, set the scale such
-as <code>[1, 2, 3, 4]</code> or <code>[1, 2, 3, 4, 5, 6]</code>. This way assessors will have to chose
-either below or above the mean of the scale.</p>
+<p>A common recommendation when defining a scoring scale for sensory evaluation is
+not to allow the choice of the exact centre. Avoid leaving the possibility of
+assigning a score exactly in the middle of the maximum and minimum to force the
+evaluators to choose a side. For example, avoid setting scoring scales such as
+<code>[1, 2, 3, 4, 5]</code> (where 3 is the exact centre). Instead, set the scale like <code>[1,
+2, 3, 4]</code> or <code>[1, 2, 3, 4, 5, 6]</code>. This way the raters have to choose either below
+or above the mean of the scale.</p>
 </div>
 <h2 id="tasting-grid">Tasting grid<a class="headerlink" href="#tasting-grid" title="Permanent link">&para;</a></h2>
 <h3 id="definition_1">Definition<a class="headerlink" href="#definition_1" title="Permanent link">&para;</a></h3>
 <p>Tasting grids or tasting sheets are the combination of tasting criteria used to
 evaluate a sample. Tasting grids can be created specifically for wines or
 spirits, or can be used for both.</p>
-<p>A tasting grid can then be used by all users in your organization for one-time
-or occasional tastings (with direct creation of a product in the database), or
+<p>A tasting grid can then be used by all users in your organisation for one-off
+or punctual tastings (with direct creation of a product in the database), or
 associated with an ordered list of samples for comparative tastings.</p>
 <div class="grid cards">
 <ul>
@@ -1175,24 +1186,24 @@ it is not currently possible to create new criteria directly from this page. See
 <p class="admonition-title">Regarding tasting notes</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud.png#only-light" width="45%" /></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud_dark.png#only-dark" width="45%" /></a></p>
-<p>The choice of <code>Comments</code> will result in different sorting of the word
-analysis on the results dashboard. The image below displays an example of the
-resulting word analysis with comments set per criterion category.</p>
-<p>Note however that the <strong>comments are not made mandatory to the
-assessor</strong>. In other words, when evaluating a sample, users can leave the Note
-text box empty and still submit results. It is advisable to ask the tasters
-to try their best to be thorough in their tasting notes.</p>
+<p>The choice of <code>Comments</code> will result in a different sorting of the word
+analysis on the results dashboard. The picutre opposite shows an example of the
+resulting word analysis with comments set for each criterion category.</p>
+<p>Note, however, that the <strong>comments are not made mandatory to the
+taster</strong>. In other words, when evaluating a sample, users can leave the Note
+text box blank and still submit results. It is advisable to ask the tasters
+to do their best to be thorough in their tasting notes.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Ordering the criterion</p>
-<p>The <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Position</span></code> field determines the order in which the criteria<br />
+<p>The <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Position</span></code> field determines the order in which the criteria
 appear in the tasting grid. This order can therefore be different from the
 one that appears in the tasting sheet creation form.</p>
 <p>This field can take either an integer or a decimal number, positive or
-negative: the criteria can simply be labeled 1, 2, 3, ... but a new criterion
+negative: the criteria can simply be labelled 1, 2, 3, ... but a new criterion
 can also be easily inserted by using a decimal number (based on the example
 above, setting a criterion with <code class="highlight"><span class="nt">Position</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5</span></code> will give it the second
-position, even if it appears in the last position of the list on the
+position, even if it appears in the last position of the list on the 
 creation form).</p>
 <p><figure markdown="span">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criteria order example" loading="lazy," src="../images/sheet_criteria_order.png#only-light" width="80%" /></a>
@@ -1206,7 +1217,7 @@ creation form).</p>
 <li>Overall - Balance</li>
 </ol>
 </div>
-<p>Tasting sheets are available to all users within the organization for
+<p>Tasting sheets are available to all users within the organisation for
 punctual tasting (see <a href="../../user/tasting/">Using Tastebuddy</a>). They can also be
 combined with a product list for tasting sessions (see <a href="./#tasting-session">the Tasting Session
 section</a> down below).</p>
@@ -1218,19 +1229,19 @@ current name of the tasting sheet, regardless of whether the name was different
 when the results were saved.</p>
 <div class="admonition warning">
 <p class="admonition-title">Modifying the criteria</p>
-<p>It is strongly discouraged to change the list of criteria on an existing sheet,
-other then rearrange them, if the sheet has already been used to record the sensory
+<p>It is strongly discouraged to change the list of criteria on an existing grid,
+other than to rearrange them, if the grid has already been used to record the sensory
 analysis of a sample. If you do decide to do so, take extra care when
 comparing samples to ensure that they have been evaluated using the same version of the
 grid.</p>
-<p>Fundamentally, adding or deleting a tasting criterion between two sensory
+<p>In principle, adding or deleting a tasting criterion between two sensory
 evaluations is tantamount to modifying the tasting protocols, and therefore the
 comparison could become irrelevant.</p>
 </div>
 <h2 id="tasting-session">Tasting session<a class="headerlink" href="#tasting-session" title="Permanent link">&para;</a></h2>
 <h3 id="definition_2">Definition<a class="headerlink" href="#definition_2" title="Permanent link">&para;</a></h3>
 <p>A tasting session is the comparative evaluation of a number of similar products
-by a group of tasters, also known as a jury panel. It allows differences between 
+at the same time by one or more tasters, also known as a jury panel. It allows differences between 
 products to be highlighted and a ranking to be established between them.</p>
 <div class="grid cards">
 <ul>
@@ -1250,7 +1261,7 @@ products to be highlighted and a ranking to be established between them.</p>
 </ul>
 </div>
 <h3 id="creating-a-tasting-session">Creating a tasting session<a class="headerlink" href="#creating-a-tasting-session" title="Permanent link">&para;</a></h3>
-<p>Tasting sessions are associated with product types: To create a new tasting session, go
+<p>Tasting sessions are associated with product types; to create a new tasting session, go
 to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a> or click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Protocols</span></code> in the left sidebar or
 top right menu, and click on either <code>+ Create Spirits Tasting Session</code> or <code>+ Create Wine Tasting Session</code> above the appropriate table.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Access</label><label for="__tabbed_3_2">Creation form</label></div>
@@ -1292,27 +1303,27 @@ session will be accessible to the judges;</li>
 <li><strong>Accessible for</strong>: how many days after the scheduled date the tasting
   session should be available (see note below).</li>
 <li><strong>Hide sample names</strong>: check this box to replace the names of the samples
-  with the order in which they are order;<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+  with the order in which they are served;<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 <li><strong>Assigned tasters</strong>: select all the users who should participate in the
 tasting session;<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
 <li><strong>Samples</strong>: from the drop-down menu, select the samples to be added to the
-tasting session and assign an order to them by filling in the <code>Position</code> field next to
-them. Any number of spirits (respectively wines) can be added by clicking <code>+ Add spirit</code>
+tasting session and assign an order to them by filling in the <code>Position</code> field
+Any number of spirits (respectively wines) can be added by clicking <code>+ Add spirit</code>
 (respectively <code>+ Add wine</code>)</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">About scheduled date and availability</p>
-<p>Each tasting session is only accessible from its scheduled date. It will not
-appear on any user's home page before that scheduled date. The dashboard that
-displays the results, whether it's for a taster or for the administrator
-himself, will also not be accessible until one of these two conditions is met:</p>
+<p>Each tasting session is only accessible from its scheduled date. Although it
+appears on the home page of the assigned users from the moment it is created, the link will be closed until the scheduled date.
+The results dashboard, whether it's for a taster or for the administrators,
+will also be inaccessible until one of these two conditions is met:</p>
 <ol>
-<li>All assigned tasters have completed the session and submitted results</li>
+<li>All assigned tasters have completed the session and submitted results;</li>
 <li>The delay specified in the <code>Accessible for (days)</code> field, calculated from
    the scheduled date, has elapsed.</li>
 </ol>
 <p>Once a taster has completed a tasting session and submitted their results,
-they won't be able to make any modification to their records or to access the tasting session anymore.</p>
+they won't be able to modify their records or access the tasting session anymore.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Ordering the samples</p>
