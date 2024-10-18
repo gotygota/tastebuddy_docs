@@ -14,9 +14,9 @@ process. There are three key components to this process:
   on which the evaluation will focus;
 
 !!! tip "Example protocols and products"
-    On account creation, a tasting protocol and example products are automatically
-    added for illustrative purposes. They can be safely used as is, modified or
-    deleted
+On account creation, a tasting protocol and example products are automatically
+added for illustrative purposes. They can be safely used as is, modified or
+deleted
 
 ## Getting started
 
@@ -47,10 +47,10 @@ the concepts will help to understand the next pages.
 
 `Sensory evaluation` or `Tasting`
 
-: Sensory evaluation of a product based on a pre-defined set
+: Sensory evaluation of one or more products based on a pre-defined set
 of criteria associated with a discrete point scale (e.g. sweet-
-ness from 1 to 6, complexity from 1 to 10, etc.). Comments
-from the taster can be associated with the criterion.
+ness from 1 to 6, complexity from 1 to 10, etc.). Tasting notes or comments can
+also be added to justify the scores.
 
 `Tasting criterion`
 
@@ -62,19 +62,24 @@ Usually grouped by category (e.g. nose, palate).
 : A set of selected criteria used during a tasting. Any number
 of criteria can be used, depending on the application.
 
-`Punctual tasting`
+`Punctual tasting` or `One-off tasting`
 
 : Sensory evaluation of a single product by a single assessor.
 
 `Tasting session`
 
-: Comparative tasting of a number p of products in a predetermined order by a
-number a of evaluators. The ordered list of products is called a flight. The
+: Simultaneous comparative tasting of two or more products in a predetermined
+order by one or more tasters. The
 same tasting sheet is used for each product and by each taster; each taster must
 evaluate all the samples in one go, but they do not necessarily perform the
 evaluation synchronously. All products are evaluated at the same time, and it is
 possible to move back and forth between samples. A tracking page is associated,
 showing the progress of each associated user within the product flight.
+
+`Flight` or `Series`
+
+: Ordered list of products to be comparatively evaluated during a tasting
+session.
 
 `Dashboard`
 
@@ -83,7 +88,3 @@ showing the progress of each associated user within the product flight.
 `Product`
 
 : Spirit or Wine on which a sensory evaluation is carried out. Sometimes referred to as a sample.
-
-`Flight` or `Product series`
-
-: Ordered series of products to be compared during a tasting session

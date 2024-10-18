@@ -8,13 +8,15 @@ spirits, which are evaluated by one or more tasters.
 Before going into the details of product creation and updating, it is important
 to consider two use cases that require two different setups:
 
-1. :material-glass-wine::material-glass-wine::material-glass-wine: **Tasting session**: understood as the comparative evaluation of a range or
-   flight of products, a tasting session requires the products to have been
-   created beforehand;
-2. :material-liquor: **One-off tasting**: understood as the evaluation of a single product on the
-   move, a one-off tasting allows the creation of a product directly from the
-   tasting grid. Existing products are automatically suggested, but a completely
-   new sample can be automatically added to the database.
+1. :material-glass-wine::material-glass-wine::material-glass-wine: **Tasting
+   session**: understood as the comparative evaluation of a range or flight of
+products simultaneously, a tasting session requires the products to have been
+created beforehand;
+2. :material-liquor: **One-off tasting**: understood as the evaluation of a
+   single product _on the move_, a one-off tasting allows the creation of a
+product directly from the tasting grid. Existing products are automatically
+suggested, but a completely new sample can be automatically added to the
+database.
 
 !!! note "Regular user rights"
     A regular user can add their own product to the database, which will then appear
@@ -95,21 +97,25 @@ differences in their characterisation.
 
 Products can also be created directly from an existing tasting grid (for
 _one-off tastings_). Existing categories and products are automatically
-suggested to reduce the risk of duplication.
+suggested to reduce the risk of duplication. See [how to conduct Punctual Tasting](../user/tasting.md#punctual-tasting)
 
 !!! warning "Duplicate samples"
-    Currently the sample related fields of a point tasting are not automatically
-    filled in, even if an existing product name is selected. Be careful not to
-    create duplicates, as the system will treat them as different products when
-    analysing the results.
+    Currently, the sample related fields of a punctual tasting are not
+    automatically filled in, even if an existing product name is selected. Be
+    careful not to mix up information, as this could result in the creation of a
+    duplicate, which the system will treat as a different product when analysing the
+    results.
 
-    If some products are duplicates and need to be merged, please contact us using
+    If some products are duplicates and need to be merged, please contact us
     [using this form](https://tastebuddy.io/contact/) or any other means linked to your account.
 
 ## Updating product information
 
 Products can be updated by clicking `Edit` on the relevant row in the product
-table available on the above page.
+table available on the corresponding product type page:
+
+- Wines can be found at [https://tastebuddy.io/products/wine/](https://tastebuddy.io/products/wine/)
+- Spirits can be found at [https://tastebuddy.io/products/spirit/](https://tastebuddy.io/products/spirit/`)
 
 !!! tip "Filling in the additional information for further analysis"
     Although most of the product identification fields are optional, it is good

@@ -1,23 +1,19 @@
 # Tasting protocols
 
-!!! tools "Work in progress"
-    This site is still under construction. Please come back later for further
-    information and documentation.
-
 ## Overview
 
 Last building block of sensory evaluation, the tasting sheet or tasting grid
 defines the set of criteria the assessment should focus on. The creation of a
-tasting protocols can be divided in two steps (plus one extra optional):
+tasting protocol can be divided in two steps (plus one extra optional):
 
 1. Creation of **tasting criteria**: these are the characteristics to which the
    tasters will assign a score;
-2. Creation of the **tasting sheet** or **tasting grid**: combining the previsouly
+2. Creation of the **tasting sheet** or **tasting grid**: combining the previously
    created criteria, a tasting grid will be available for both one-off tastings
    and tasting sessions;
 3. (optional) Creation of a **tasting session**: by combining [the products to
    be tasted](products.md), a tasting sheet and assigning users, it allows for
-   the comparative tasting of a series of products.
+   the comparative tasting of a series of products simultaneously.
 
 Note that `Regular Users` cannot create their own tasting criteria, sheets or 
 sessions.
@@ -27,9 +23,9 @@ sessions.
 Tasting criteria are the characteristics that the tasters will score when
 evaluating samples. They are usually grouped by category, such as nose or
 palate, but any category can be created to suit specific applications. Tasting
-criteria can be used in multiple tasting grids. They are not independant of the
+criteria can be used in multiple tasting grids. They are independent of the
 product type and can be used for both wine and spirits (see [the tasting grid
-section below](protocols.md#tasting-grid).
+section below](protocols.md#tasting-grid)).
 
 <div class="grid cards" markdown>
 
@@ -45,16 +41,32 @@ section below](protocols.md#tasting-grid).
 
     :octicons-triangle-right-24: **Description** (optional): used to provide a help text on the tasting sheet.
 
-    :octicons-triangle-right-24: **Scoring scale**: takes a minimum score, a maximum score, and steps between the two extremes which will build the scores available to the tasters. For
-    example, a scale from 1 to 10 by steps of 1 will allow tasters to chose any
-    score in the range 1, 2, 3, 4... 10.
+    :octicons-triangle-right-24: **Scoring scale**: takes a minimum score, a
+    maximum score, and steps between the two extremes which will build the scores
+    available to the tasters. For example, a scale from 1 to 9 by steps of 2 will 
+    allow tasters to chose any score in the range 1, 3, 5, 7, and 9.
 
 </div>
 
+!!! info "Just About Right"
+    Wines and spirits are usually rated according to a set of selected criteria to
+    which a rating scale is assigned. The rating scale is usually not used as an
+    {--intensity--} scale, but as a {++"just about right"++} scale. The maximum score therefore
+    corresponds to the exact expected expression of the criterion in question.
+
+    For example, you might rate the sweetness of a particular product. In this case,
+    a scale of 1 to 10 should not be understood as
+
+     from ```1: not sweet at all``` to ```10: excessively sweet ```
+
+    but as
+
+     from ```1: too sweet or not sweet enough``` to ```10: perfectly sweet ```
 ### Adding a criterion
-To create a new tasting criterion, go to [https://tastebuddy.io/protocols/](https://tastebuddy.io/protocols/)
- or click on `Protocols` in the left side bar or top right menu, and click on 
-`#!yaml + Add criterion` above the top-most table.
+To create a new tasting criterion, go to
+[https://tastebuddy.io/protocols/](https://tastebuddy.io/protocols/) or click on
+`Protocols` in the left side bar or top right menu :material-view-grid:, and
+click on `#!yaml + Add criterion` above the top-most table.
 
 === "Access"
 
@@ -95,10 +107,10 @@ will render on the tasting sheet as:
 !!! warning "Updating criteria"
     While criteria can be updated at any time, it is good practice to avoid changing
     the scoring scale and instead create a new criterion if it has already been used
-    in a sensory evaluation to avoid comparing products that have not been evaluated
+    in a sensory evaluation, to avoid comparing products that have not been evaluated
     with exactly the same protocol.
 
-    In the backend, even though the score relative to the scale and the scale itself
+    In the backend, although the score relative to the scale and the scale itself
     are stored in the database at the moment the sensory analysis results are
     submitted, if the criterion is changed, the system will allow the comparison of
     products that may have used different scales.
@@ -106,20 +118,22 @@ will render on the tasting sheet as:
 !!! info "Defining the scoring scale"
     By setting different maximum and minimum scores for different criteria, the
     importance of the criteria can be weighted. Higher available scores for a given
-    criterion result in a greater influence on the total score for that criterion.
-    However, some of the analyses (in particular the Principal Component Analysis on
-    criteria) are performed on the value of the scores relative to their maximum,
-    and for easier reading of some of the charts (such as the radar charts) they are
-    also sometimes normalised to a scale from 0 to 1.
+    criterion result in a greater influence for that criterion on the overall
+    evaluation. However, some of the analyses (in particular the Principal Component
+    Analysis of the criteria) are performed on the value of the scores relative to
+    their maximum (i.e. without taking into account the importance given to the
+    criteria on the overall evaluation), and to make some of the charts (such as
+    the radar charts) easier to read, the scores are sometimes normalised to a scale
+    of 0-1.
 
 !!! tip "Avoid middle ground"
-    A usual recommandation when defining a scoring scale for sensory evaluation is
-    to not allow for the selection of the exact center. Avoid leaving the
-    possibility to assign a score exactly in the middle of the maximum and minimum,
-    to force the assessors to chose a side. For example, avoid fixing scoring scales
-    like `[1, 2, 3, 4, 5]` (where 3 is the exact center). Instead, set the scale such
-    as `[1, 2, 3, 4]` or `[1, 2, 3, 4, 5, 6]`. This way assessors will have to chose
-    either below or above the mean of the scale.
+    A common recommendation when defining a scoring scale for sensory evaluation is
+    not to allow the choice of the exact centre. Avoid leaving the possibility of
+    assigning a score exactly in the middle of the maximum and minimum to force the
+    evaluators to choose a side. For example, avoid setting scoring scales such as
+    `[1, 2, 3, 4, 5]` (where 3 is the exact centre). Instead, set the scale like `[1,
+    2, 3, 4]` or `[1, 2, 3, 4, 5, 6]`. This way the raters have to choose either below
+    or above the mean of the scale.
 
 ## Tasting grid
 ### Definition
@@ -127,8 +141,8 @@ Tasting grids or tasting sheets are the combination of tasting criteria used to
 evaluate a sample. Tasting grids can be created specifically for wines or
 spirits, or can be used for both.
 
-A tasting grid can then be used by all users in your organization for one-time
-or occasional tastings (with direct creation of a product in the database), or
+A tasting grid can then be used by all users in your organisation for one-off
+or punctual tastings (with direct creation of a product in the database), or
 associated with an ordered list of samples for comparative tastings.
 
 <div class="grid cards" markdown>
@@ -198,26 +212,26 @@ Finally, click `Add` at the bottom right of the page to create the tasting sheet
     ![Word cloud example](images/word_cloud.png#only-light){ loading=lazy, width="45%", align=right }
     ![Word cloud example](images/word_cloud_dark.png#only-dark){ loading=lazy, width="45%", align=right }
 
-    The choice of `Comments` will result in different sorting of the word
-    analysis on the results dashboard. The image below displays an example of the
-    resulting word analysis with comments set per criterion category.
+    The choice of `Comments` will result in a different sorting of the word
+    analysis on the results dashboard. The picutre opposite shows an example of the
+    resulting word analysis with comments set for each criterion category.
 
-    Note however that the **comments are not made mandatory to the
-    assessor**. In other words, when evaluating a sample, users can leave the Note
-    text box empty and still submit results. It is advisable to ask the tasters
-    to try their best to be thorough in their tasting notes.
+    Note, however, that the **comments are not made mandatory to the
+    taster**. In other words, when evaluating a sample, users can leave the Note
+    text box blank and still submit results. It is advisable to ask the tasters
+    to do their best to be thorough in their tasting notes.
 
 
 !!! tip "Ordering the criterion"
-    The `#!yaml Position` field determines the order in which the criteria  
+    The `#!yaml Position` field determines the order in which the criteria
     appear in the tasting grid. This order can therefore be different from the
     one that appears in the tasting sheet creation form.
 
     This field can take either an integer or a decimal number, positive or
-    negative: the criteria can simply be labeled 1, 2, 3, ... but a new criterion
+    negative: the criteria can simply be labelled 1, 2, 3, ... but a new criterion
     can also be easily inserted by using a decimal number (based on the example
     above, setting a criterion with `#!yaml Position: 1.5` will give it the second
-    position, even if it appears in the last position of the list on the
+    position, even if it appears in the last position of the list on the 
     creation form).
 
     <figure markdown="span">
@@ -232,7 +246,7 @@ Finally, click `Add` at the bottom right of the page to create the tasting sheet
     3. Palate - Flavour complexity
     4. Overall - Balance
 
-Tasting sheets are available to all users within the organization for
+Tasting sheets are available to all users within the organisation for
 punctual tasting (see [Using Tastebuddy](../user/tasting.md)). They can also be
 combined with a product list for tasting sessions (see [the Tasting Session
 section](protocols.md#tasting-session) down below).
@@ -246,13 +260,13 @@ current name of the tasting sheet, regardless of whether the name was different
 when the results were saved.
 
 !!! warning "Modifying the criteria"
-    It is strongly discouraged to change the list of criteria on an existing sheet,
-    other then rearrange them, if the sheet has already been used to record the sensory
+    It is strongly discouraged to change the list of criteria on an existing grid,
+    other than to rearrange them, if the grid has already been used to record the sensory
     analysis of a sample. If you do decide to do so, take extra care when
     comparing samples to ensure that they have been evaluated using the same version of the
     grid.
 
-    Fundamentally, adding or deleting a tasting criterion between two sensory
+    In principle, adding or deleting a tasting criterion between two sensory
     evaluations is tantamount to modifying the tasting protocols, and therefore the
     comparison could become irrelevant.
 
@@ -260,7 +274,7 @@ when the results were saved.
 ### Definition
 
 A tasting session is the comparative evaluation of a number of similar products
-by a group of tasters, also known as a jury panel. It allows differences between 
+at the same time by one or more tasters, also known as a jury panel. It allows differences between 
 products to be highlighted and a ranking to be established between them.
 
 <div class="grid cards" markdown>
@@ -291,7 +305,7 @@ products to be highlighted and a ranking to be established between them.
 
 ### Creating a tasting session
 
-Tasting sessions are associated with product types: To create a new tasting session, go
+Tasting sessions are associated with product types; to create a new tasting session, go
 to [https://tastebuddy.io/protocols/](https://tastebuddy.io/protocols/) or click on `#!yaml Protocols` in the left sidebar or
 top right menu, and click on either `+ Create Spirits Tasting Session` or `+ Create Wine Tasting Session` above the appropriate table.
 
@@ -333,26 +347,26 @@ session will be accessible to the judges;
 - **Accessible for**: how many days after the scheduled date the tasting
   session should be available (see note below).
 - **Hide sample names**: check this box to replace the names of the samples
-  with the order in which they are order;[^1]
+  with the order in which they are served;[^1]
 - **Assigned tasters**: select all the users who should participate in the
 tasting session;[^2]
 - **Samples**: from the drop-down menu, select the samples to be added to the
-tasting session and assign an order to them by filling in the `Position` field next to
-them. Any number of spirits (respectively wines) can be added by clicking `+ Add spirit`
+tasting session and assign an order to them by filling in the `Position` field
+Any number of spirits (respectively wines) can be added by clicking `+ Add spirit`
 (respectively `+ Add wine`)
 
 !!! info "About scheduled date and availability"
-    Each tasting session is only accessible from its scheduled date. It will not
-    appear on any user's home page before that scheduled date. The dashboard that
-    displays the results, whether it's for a taster or for the administrator
-    himself, will also not be accessible until one of these two conditions is met:
+    Each tasting session is only accessible from its scheduled date. Although it
+    appears on the home page of the assigned users from the moment it is created, the link will be closed until the scheduled date.
+    The results dashboard, whether it's for a taster or for the administrators,
+    will also be inaccessible until one of these two conditions is met:
 
-    1. All assigned tasters have completed the session and submitted results
+    1. All assigned tasters have completed the session and submitted results;
     2. The delay specified in the `Accessible for (days)` field, calculated from
        the scheduled date, has elapsed.
 
     Once a taster has completed a tasting session and submitted their results,
-    they won't be able to make any modification to their records or to access the tasting session anymore.
+    they won't be able to modify their records or access the tasting session anymore.
 
 !!! tip "Ordering the samples"
     The `#!yaml Position` field determines the order in which the samples  
