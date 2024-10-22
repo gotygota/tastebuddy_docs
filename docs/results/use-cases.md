@@ -21,7 +21,7 @@ then displayed on a dashboard, showing in a user-friendly way the gains and loss
 in the aromatic profile, and ultimately highlighting the optimal ageing period to
 achieve the desired balance.
 
-**Such a use case calls for a regular {==punctual tasting==} of the same sample to
+**Such a use case calls for regular {==punctual tastings==} of the same sample to
 showcase the evolution of the aromatic profile.**
 
 The resulting dashboard for such a use case would display the evolution of the

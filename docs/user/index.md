@@ -39,7 +39,7 @@ protocols created within your organisation.[^1]
 - If you have been assigned tasting sessions, they will appear in the `NEXT 
   TASTING SESSIONS` card just below your profile banner. From the
   scheduled date, click on `Access` to [start the comparative sensory evaluation of a
-  flight of samples](tasting.md#tasting-session) (note that it is not possible to
+  flight of samples](tasting.md#tasting-sessions) (note that it is not possible to
   conduct a comparative tasting without previously creating the protocol. See
   [Creating a Tasting Session](../admin/protocols.md#tasting-session) for more
 information);
