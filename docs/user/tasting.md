@@ -20,7 +20,7 @@ is unknown and unplanned before the tasting itself), while the latter requires
 preparation work and usually fulfils a precise objective as to what the
 comparative evaluation of the samples should highlight.
 
-You can read examples of use [on this page](../results/use-cases.md)
+You can read examples of use [on this page](../results/use-cases.md).
 ## Punctual tasting
 To evaluate a sample _on the go_, from your home page, click `Taste a spirit` or
 `Taste a wine` at the bottom of the card corresponding to the tasting sheet you
@@ -45,7 +45,7 @@ more product related fields.
 </figure>
 
 At this stage, only the product name is required. The product information
-can always be updated later (see [Updating Product information](../admin/products.md#updating-product-information).
+can always be updated later (see [Updating Product information](../admin/products.md#updating-product-information)).
 It is strongly recommended to fill in all available information for
 possible further analysis. 
 
@@ -91,11 +91,11 @@ page with a confirmation message.
     For example, you might rate the sweetness of a particular product. In this case,
     a scale of 1 to 10 should not be understood as
 
-    ``` from not sweet at all to excessively sweet ```
+    from ```not sweet at all``` to ```excessively sweet ```
 
     but as
 
-    ``` from too sweet or not sweet enough to perfectly sweet ```
+    from ```too sweet or not sweet enough``` to ```perfectly sweet ```
 
 Remember to update the product information as soon as it becomes available
 if you were unable to do so at the time of tasting.

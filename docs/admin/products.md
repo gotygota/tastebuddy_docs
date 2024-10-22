@@ -21,7 +21,7 @@ database.
 !!! note "Regular user rights"
     A regular user can add their own product to the database, which will then appear
     in the organisation's sample list. However, they will only be able to update or
-    view the results of the product they have created. See the Dashboard section of
+    view the results of the product they have created. See the [Dashboard section](../results/index.md) of
     the documentation.
 
 ## Product creation
