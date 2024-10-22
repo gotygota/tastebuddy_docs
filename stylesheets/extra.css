@@ -18,15 +18,15 @@
 }
 .md-typeset .admonition.charts,
 .md-typeset details.charts {
-  border-color: rgb(167, 243 208);
+  border-color: rgb(220, 132, 108);
 }
 .md-typeset .charts > .admonition-title,
 .md-typeset .charts > summary {
-  background-color: rgba(167, 243 208, 0.1);
+  background-color: rgba(220, 132, 108, 0.1);
 }
 .md-typeset .charts > .admonition-title::before,
 .md-typeset .charts > summary::before {
-  background-color: rgb(167, 243 208);
+  background-color: rgb(220, 132, 108);
   -webkit-mask-image: var(--md-admonition-icon--charts);
   mask-image: var(--md-admonition-icon--charts);
 }
