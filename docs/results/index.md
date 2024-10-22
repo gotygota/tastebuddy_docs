@@ -1,9 +1,4 @@
 # Understanding results
-
-!!! tools "Work in progress"
-    This site is still under construction. Please come back later for further
-    information and documentation.
-
 ## Preamble
 
 All the steps described and explained in the previous pages have led to the

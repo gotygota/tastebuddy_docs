@@ -1,5 +1,6 @@
 :root {
   --md-admonition-icon--tools: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>tools</title><path d="M21.71 20.29L20.29 21.71A1 1 0 0 1 18.88 21.71L7 9.85A3.81 3.81 0 0 1 6 10A4 4 0 0 1 2.22 4.7L4.76 7.24L5.29 6.71L6.71 5.29L7.24 4.76L4.7 2.22A4 4 0 0 1 10 6A3.81 3.81 0 0 1 9.85 7L21.71 18.88A1 1 0 0 1 21.71 20.29M2.29 18.88A1 1 0 0 0 2.29 20.29L3.71 21.71A1 1 0 0 0 5.12 21.71L10.59 16.25L7.76 13.42M20 2L16 4V6L13.83 8.17L15.83 10.17L18 8H20L22 4Z" /></svg>');
+  --md-admonition-icon--charts: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chart-areaspline</title><path d="M17.45,15.18L22,7.31V19L22,21H2V3H4V15.54L9.5,6L16,9.78L20.24,2.45L21.97,3.45L16.74,12.5L10.23,8.75L4.31,19H6.57L10.96,11.44L17.45,15.18Z" /></svg>');
 }
 .md-typeset .admonition.tools,
 .md-typeset details.tools {
@@ -14,4 +15,18 @@
   background-color: rgb(245, 158, 11);
   -webkit-mask-image: var(--md-admonition-icon--tools);
   mask-image: var(--md-admonition-icon--tools);
+}
+.md-typeset .admonition.charts,
+.md-typeset details.charts {
+  border-color: rgb(167, 243 208);
+}
+.md-typeset .charts > .admonition-title,
+.md-typeset .charts > summary {
+  background-color: rgba(167, 243 208, 0.1);
+}
+.md-typeset .charts > .admonition-title::before,
+.md-typeset .charts > summary::before {
+  background-color: rgb(167, 243 208);
+  -webkit-mask-image: var(--md-admonition-icon--charts);
+  mask-image: var(--md-admonition-icon--charts);
 }
