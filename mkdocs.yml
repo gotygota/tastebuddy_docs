@@ -77,10 +77,9 @@ markdown_extensions:
 
 extra:
   analytics:
-    # provider: plausible
-    # domain: docs.tastebuddy.io
-    # src: "http://plausible-twsg400wwcgk4swsgkwk0wko.49.13.76.205.sslip.io/js/plausible.js"
-    provider: custom
+    provider: plausible
+    domain: docs.tastebuddy.io
+    src: "http://plausible-twsg400wwcgk4swsgkwk0wko.49.13.76.205.sslip.io/js/script.hash.outbound-links.tagged-events.js"
 #
 nav:
   - Home: index.md
