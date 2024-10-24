@@ -97,7 +97,7 @@ differences in their characterisation.
 
 Products can also be created directly from an existing tasting grid (for
 _one-off tastings_). Existing categories and products are automatically
-suggested to reduce the risk of duplication. See [how to conduct Punctual Tasting](../user/tasting.md#punctual-tasting)
+suggested to reduce the risk of duplication. See [how to conduct Punctual Tasting](../user/tasting.md#punctual-tasting).
 
 !!! warning "Duplicate samples"
     Currently, the sample related fields of a punctual tasting are not

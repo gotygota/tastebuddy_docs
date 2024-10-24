@@ -46,6 +46,7 @@ plugins:
   - search
   - open-in-new-tab
   - glightbox
+  - material-plausible
 
 markdown_extensions:
   - abbr
@@ -74,6 +75,12 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra:
+  analytics:
+    provider: plausible
+    domain: docs.tastebuddy.io
+    src: "http://plausible-twsg400wwcgk4swsgkwk0wko.49.13.76.205.sslip.io/js/plausible.js"
+#
 nav:
   - Home: index.md
   - For admins:
