@@ -42,8 +42,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -56,11 +56,7 @@
   
 
 
-  <script
-  defer
-  data-domain="docs.tastebuddy.io"
-  src="https://plausible.tastebuddy.io/js/script.js"
-></script>
+  <script defer= data-domain="docs.tastebuddy.io" src="../../assets/external/plausible.tastebuddy.io/js/script.js"></script>
 
 <script>
   window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) };
@@ -815,8 +811,8 @@
 <h1 id="profile-management">Profile management<a class="headerlink" href="#profile-management" title="Permanent link">&para;</a></h1>
 <p>Edit your personal and login information from
 <a href="https://tastebuddy.io/users/update/">https://tastebuddy.io/users/update/</a>.</p>
-<p><a class="glightbox" href="../images/user_profile.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile page screenshot" loading="lazy" src="../images/user_profile.png#only-light" /></a>
-<a class="glightbox" href="../images/user_profile_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile page screenshot" loading="lazy" src="../images/user_profile_dark.png#only-dark" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile page screenshot" loading="lazy" src="../images/user_profile.png#only-light" /></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile page screenshot" loading="lazy" src="../images/user_profile_dark.png#only-dark" /></a></p>
 <h2 id="personal-information">Personal information<a class="headerlink" href="#personal-information" title="Permanent link">&para;</a></h2>
 <p>Update your personal information by directly updating the corresponding field
 and clicking on <ins class="critic">Update Profile</ins></p>
@@ -875,7 +871,7 @@ taht will be automatically sent to the new email address.</p>
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! We'll make sure to update the content to be more thorough.
             </div>
           
         </div>
@@ -970,7 +966,19 @@ taht will be automatically sent to the new email address.</p>
         <script src="/js/open_in_new_tab.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
