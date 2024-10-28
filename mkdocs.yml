@@ -41,12 +41,33 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  analytics:
+    # provider: custom
+    provider: plausible
+    domain: docs.tastebuddy.io
+    src: "https://plausible.tastebuddy.io/js/script.js"
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: good
+          note: >-
+            Thanks for your feedback!
+
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: bad
+          note: >-
+            Thanks for your feedback! We'll make sure to update the content to be more thorough.
+#
 plugins:
-  - privacy
   - search
   - open-in-new-tab
   - glightbox
   - material-plausible
+  - privacy
 
 markdown_extensions:
   - abbr
@@ -75,28 +96,6 @@ markdown_extensions:
   - toc:
       permalink: true
 
-extra:
-  analytics:
-    # provider: custom
-    provider: plausible
-    domain: docs.tastebuddy.io
-    src: "https://plausible.tastebuddy.io/js/plausible.js"
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: good
-          note: >-
-            Thanks for your feedback!
-
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: bad
-          note: >-
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-#
 nav:
   - Home: index.md
   - For admins:
