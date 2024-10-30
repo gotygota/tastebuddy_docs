@@ -12,6 +12,7 @@ theme:
     - announce.dismiss
     - navigation.indexes
     - navigation.footer
+  font: false
   icon:
     logo: material/library-shelves
   favicon: images/favicon.ico
@@ -67,7 +68,7 @@ plugins:
   - open-in-new-tab
   - glightbox
   - material-plausible
-  - privacy
+  # - privacy
 
 markdown_extensions:
   - abbr

@@ -14,9 +14,9 @@ process. There are three key components to this process:
   on which the evaluation will focus;
 
 !!! tip "Example protocols and products"
-  On account creation, a tasting protocol and example products are automatically
-  added for illustrative purposes. They can be safely used as is, modified or
-  deleted
+    On account creation, a tasting protocol and example products are automatically
+    added for illustrative purposes. They can be safely used as is, modified or
+    deleted
 
 ## Getting started
 
