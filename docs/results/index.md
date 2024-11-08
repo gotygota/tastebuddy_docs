@@ -206,10 +206,29 @@ section 1.3 Product or taster differences?).
 
 ## Types of dashboards
 
-Dashboards are graphical displays of sensory analysis results. They allow
-for an easy interpretation of results, comparison of products, characterisation
-of tasters preferences, and visual representation of the evolution of a product
-sensory profile.
+Dashboards are graphical representations of sensory analysis results. They allow
+easy interpretation of results, comparison of products, characterisation of
+tasters' preferences and visual representation of the evolution of a product's
+sensory profile. Tastebuddy has been designed to help users better understand
+the sensory profile of wines and spirits, and to help tasters better understand
+their strengths, weaknesses and scoring style, in order to improve and be more
+aware when evaluating products.
+
+!!! warning "A word of caution"
+    Although the same charts can be found on many dashboards, they usually serve
+    different purposes depending on the type of dashboard and the user accessing it.
+    Data is sometimes processed differently from one dashboard to another (for
+    example, scores are centred on a product dashboard but not on a taster
+    self-assessment dashboard - more on this later). It is therefore important to
+    remember that different conclusions may be drawn from apparently similar graphs
+    when displayed on different dashboards.
+
+    Always refer to the relevant part of the documentation by directly clicking
+    the question mark :material-help-circle: next to the chart.
+
+    The following sections explain the main types of dashboards, their purpose and
+    how to read and understand the charts. For a direct access to an indivudal chart
+    explanation, see [How to read the charts](charts.md).
 
 According to a user's role, they have access to different types of dashboards:
 while Admins have access to all the data within an organisation, Regular Users
@@ -233,3 +252,7 @@ The following pages explains in details each dashboard available on Tastebuddy,
 as well as guidelines on how to interpret the results and draw conclusions from
 the charts. The chart section describes each chart individually for easier
 direct access.
+
+- [Taster self-assessment](self-assessment-dashboard.md)
+- [Individual product dashboard](product-dashboard.md)
+- [Tasting session dashboard](session-dashboard.md)

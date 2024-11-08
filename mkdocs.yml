@@ -8,10 +8,14 @@ theme:
   features:
     - content.tooltips
     - content.code.annotate
-    - header.autohide
     - announce.dismiss
     - navigation.indexes
     - navigation.footer
+    - navigation.section
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.expand
   font: false
   icon:
     logo: material/library-shelves
@@ -39,8 +43,15 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: deep orange
+
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra:
   analytics:
@@ -68,6 +79,7 @@ plugins:
   - open-in-new-tab
   - glightbox
   - material-plausible
+  - plotly
   # - privacy
 
 markdown_extensions:
@@ -77,6 +89,8 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.caret
   - pymdownx.critic:
       mode: view
@@ -90,7 +104,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: plotly
+          class: mkdocs-plotly
+          format: !!python/name:mkdocs_plotly_plugin.fences.fence_plotly
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -110,6 +128,8 @@ nav:
       - Evaluate samples: user/tasting.md
   - Result analysis:
       - results/index.md
-      - Dashboards: results/dashboards.md
+      - Taster self assessment dashboard: results/self-assessment-dashboard.md
+      - Individual product dashboard: results/product-dashboard.md
+      - Tasting session dashboard: results/session-dashboard.md
       - Reading the charts: results/charts.md
       - Case study: results/use-cases.md
