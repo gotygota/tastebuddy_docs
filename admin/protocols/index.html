@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -44,6 +44,8 @@
 
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -658,7 +660,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -757,6 +761,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -764,7 +772,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
@@ -802,11 +812,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../results/dashboards/" class="md-nav__link">
+      <a href="../../results/self-assessment-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
   </span>
   
 
@@ -1041,8 +1093,8 @@
                   
 
 
-<h1 id="tasting-protocols">Tasting protocols<a class="headerlink" href="#tasting-protocols" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h1 id="tasting-protocols">Tasting protocols<a class="headerlink" href="#tasting-protocols" title="Permanent link">¶</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
 <p>Last building block of sensory evaluation, the tasting sheet or tasting grid
 defines the set of criteria the assessment should focus on. The creation of a
 tasting protocol can be divided in two steps (plus one extra optional):</p>
@@ -1058,8 +1110,8 @@ tasting protocol can be divided in two steps (plus one extra optional):</p>
 </ol>
 <p>Note that <code>Regular Users</code> cannot create their own tasting criteria, sheets or 
 sessions.</p>
-<h2 id="tasting-criteria">Tasting criteria<a class="headerlink" href="#tasting-criteria" title="Permanent link">&para;</a></h2>
-<h3 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h3>
+<h2 id="tasting-criteria">Tasting criteria<a class="headerlink" href="#tasting-criteria" title="Permanent link">¶</a></h2>
+<h3 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">¶</a></h3>
 <p>Tasting criteria are the characteristics that the tasters will score when
 evaluating samples. They are usually grouped by category, such as nose or
 palate, but any category can be created to suit specific applications. Tasting
@@ -1069,13 +1121,13 @@ section below</a>).</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.2 22v-.3c0-1.49-1.2-2.7-2.7-2.7s-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7c0-1.1.9-2 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46 0 .1 0 .2-.03.29-.62-.35-1.3-.59-2.04-.71-.18-.62-.75-1.08-1.43-1.08H17V7h-5V5.5c0-.83-.67-1.5-1.5-1.5S9 4.67 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c.97 0 1.87.3 2.62.81a5.956 5.956 0 0 0 .69 4.19zm4.8-7v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg></span> <strong class="xl middle">Criterion</strong></p>
-<hr />
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.2 22v-.3c0-1.49-1.2-2.7-2.7-2.7s-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7c0-1.1.9-2 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46 0 .1 0 .2-.03.29-.62-.35-1.3-.59-2.04-.71-.18-.62-.75-1.08-1.43-1.08H17V7h-5V5.5c0-.83-.67-1.5-1.5-1.5S9 4.67 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c.97 0 1.87.3 2.62.81a5.956 5.956 0 0 0 .69 4.19zm4.8-7v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg></span> <strong class="xl middle">Criterion</strong></p>
+<hr/>
 <p>A criterion takes the following attributes:</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Name</strong></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Category</strong>: used to group criteria according to a common characteristic, such as nose or palate for example;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong> (optional): used to provide a help text on the tasting sheet.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Scoring scale</strong>: takes a minimum score, a
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Name</strong></p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Category</strong>: used to group criteria according to a common characteristic, such as nose or palate for example;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Description</strong> (optional): used to provide a help text on the tasting sheet.</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Scoring scale</strong>: takes a minimum score, a
 maximum score, and steps between the two extremes which will build the scores
 available to the tasters. For example, a scale from 1 to 9 by steps of 2 will 
 allow tasters to chose any score in the range 1, 3, 5, 7, and 9.</p>
@@ -1094,23 +1146,23 @@ a scale of 1 to 10 should not be understood as</p>
 <p>but as</p>
 <p>from <code>1: too sweet or not sweet enough</code> to <code>10: perfectly sweet</code></p>
 </div>
-<h3 id="adding-a-criterion">Adding a criterion<a class="headerlink" href="#adding-a-criterion" title="Permanent link">&para;</a></h3>
+<h3 id="adding-a-criterion">Adding a criterion<a class="headerlink" href="#adding-a-criterion" title="Permanent link">¶</a></h3>
 <p>To create a new tasting criterion, go to
 <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a> or click on
-<code>Protocols</code> in the left side bar or top right menu <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"/></svg></span>, and
+<code>Protocols</code> in the left side bar or top right menu <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"></path></svg></span>, and
 click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">+ Add criterion</span></code> above the top-most table.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Access</label><label for="__tabbed_1_2">Creation form</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"/><input id="__tabbed_1_2" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="__tabbed_1_1">Access</label><label for="__tabbed_1_2">Creation form</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/criteria_creation.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation.png#only-light" /></a>
-<a class="glightbox" href="../images/criteria_creation_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criteria_creation.png#only-light"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criteria_creation_dark.png#only-dark"><img alt="Criterion creation" loading="lazy" src="../images/criteria_creation_dark.png#only-dark"/></a>
 </figure></p>
 </div>
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/criteria_creation_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2.png#only-light" width="400" /></a>
-<a class="glightbox" href="../images/criteria_creation_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2_dark.png#only-dark" width="400" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criteria_creation_2.png#only-light"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2.png#only-light" width="400"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criteria_creation_2_dark.png#only-dark"><img _="," align="left" alt="Criterion creation" loading="lazy," src="../images/criteria_creation_2_dark.png#only-dark" width="400"/></a>
 </figure></p>
 </div>
 </div>
@@ -1130,10 +1182,10 @@ click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">+ Add c
 </ol>
 <p>will render on the tasting sheet as:</p>
 <figure>
-<a class="glightbox" href="../images/criterion_example.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion example" loading="lazy" src="../images/criterion_example.png#only-light" /></a>
-<a class="glightbox" href="../images/criterion_example_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criterion example" loading="lazy" src="../images/criterion_example_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criterion_example.png#only-light"><img alt="Criterion example" loading="lazy" src="../images/criterion_example.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/criterion_example_dark.png#only-dark"><img alt="Criterion example" loading="lazy" src="../images/criterion_example_dark.png#only-dark"/></a>
 </figure>
-<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Updating criteria</p>
 <p>While criteria can be updated at any time, it is good practice to avoid changing
@@ -1167,8 +1219,8 @@ evaluators to choose a side. For example, avoid setting scoring scales such as
 2, 3, 4]</code> or <code>[1, 2, 3, 4, 5, 6]</code>. This way the raters have to choose either below
 or above the mean of the scale.</p>
 </div>
-<h2 id="tasting-grid">Tasting grid<a class="headerlink" href="#tasting-grid" title="Permanent link">&para;</a></h2>
-<h3 id="definition_1">Definition<a class="headerlink" href="#definition_1" title="Permanent link">&para;</a></h3>
+<h2 id="tasting-grid">Tasting grid<a class="headerlink" href="#tasting-grid" title="Permanent link">¶</a></h2>
+<h3 id="definition_1">Definition<a class="headerlink" href="#definition_1" title="Permanent link">¶</a></h3>
 <p>Tasting grids or tasting sheets are the combination of tasting criteria used to
 evaluate a sample. Tasting grids can be created specifically for wines or
 spirits, or can be used for both.</p>
@@ -1178,33 +1230,33 @@ associated with an ordered list of samples for comparative tastings.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M6 3C3.79 3 2 4.79 2 7s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m6 2h10v2H12zm0 14v-2h10v2zm0-8h10v2H12z"/></svg></span> <strong class="xl middle">Tasting grid</strong></p>
-<hr />
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M6 3C3.79 3 2 4.79 2 7s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m6 2h10v2H12zm0 14v-2h10v2zm0-8h10v2H12z"></path></svg></span> <strong class="xl middle">Tasting grid</strong></p>
+<hr/>
 <p>A tasting grid has the following attributes:</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Name</strong></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Product type</strong>: <em>whether the tasting sheet can be used to rate wines, spirits or both (default to both)</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Comments</strong>: <em>whether tasters can add comments (i.e. tasting notes) per criterion, per category of criteria, only a single overall tasting note or none at all (default to per category)</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong> (optional): used to provide a help text at the top of the tasting sheet.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Ordered list of criteria</strong>: <em>the list of criteria to be combined for a complete score of the sample</em>.</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Name</strong></p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Product type</strong>: <em>whether the tasting sheet can be used to rate wines, spirits or both (default to both)</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Comments</strong>: <em>whether tasters can add comments (i.e. tasting notes) per criterion, per category of criteria, only a single overall tasting note or none at all (default to per category)</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Description</strong> (optional): used to provide a help text at the top of the tasting sheet.</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Ordered list of criteria</strong>: <em>the list of criteria to be combined for a complete score of the sample</em>.</p>
 </li>
 </ul>
 </div>
-<h3 id="adding-a-tasting-sheet">Adding a tasting sheet<a class="headerlink" href="#adding-a-tasting-sheet" title="Permanent link">&para;</a></h3>
+<h3 id="adding-a-tasting-sheet">Adding a tasting sheet<a class="headerlink" href="#adding-a-tasting-sheet" title="Permanent link">¶</a></h3>
 <p>To create a new tasting sheet, go to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a>
  or click on <code>Protocols</code> in the left sidebar or top right menu, and click on 
 <code>+ Add Tasting Sheet</code> above the second table.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Access</label><label for="__tabbed_2_2">Creation form</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"/><input id="__tabbed_2_2" name="__tabbed_2" type="radio"/><div class="tabbed-labels"><label for="__tabbed_2_1">Access</label><label for="__tabbed_2_2">Creation form</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/sheet_creation.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation.png#only-light" /></a>
-<a class="glightbox" href="../images/sheet_creation_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_creation.png#only-light"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_creation_dark.png#only-dark"><img alt="Sheet creation" loading="lazy" src="../images/sheet_creation_dark.png#only-dark"/></a>
 </figure></p>
 </div>
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/sheet_creation_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/sheet_creation_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_creation_2.png#only-light"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_creation_2_dark.png#only-dark"><img alt="Sheet creation" loading="lazy," src="../images/sheet_creation_2_dark.png#only-dark" width="80%"/></a>
 </figure></p>
 </div>
 </div>
@@ -1231,8 +1283,8 @@ it is not currently possible to create new criteria directly from this page. See
 <p>Finally, click <code>Add</code> at the bottom right of the page to create the tasting sheet.</p>
 <div class="admonition info">
 <p class="admonition-title">Regarding tasting notes</p>
-<p><a class="glightbox" href="../images/word_cloud.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud.png#only-light" width="45%" /></a>
-<a class="glightbox" href="../images/word_cloud_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud_dark.png#only-dark" width="45%" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/word_cloud.png#only-light"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud.png#only-light" width="45%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/word_cloud_dark.png#only-dark"><img _="," align="right" alt="Word cloud example" loading="lazy," src="../images/word_cloud_dark.png#only-dark" width="45%"/></a></p>
 <p>The choice of <code>Comments</code> will result in a different sorting of the word
 analysis on the results dashboard. The picutre opposite shows an example of the
 resulting word analysis with comments set for each criterion category.</p>
@@ -1253,8 +1305,8 @@ above, setting a criterion with <code class="highlight"><span class="nt">Positio
 position, even if it appears in the last position of the list on the 
 creation form).</p>
 <p><figure markdown="span">
-<a class="glightbox" href="../images/sheet_criteria_order.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criteria order example" loading="lazy," src="../images/sheet_criteria_order.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/sheet_criteria_order_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Criteria order example" loading="lazy," src="../images/sheet_criteria_order_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_criteria_order.png#only-light"><img alt="Criteria order example" loading="lazy," src="../images/sheet_criteria_order.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sheet_criteria_order_dark.png#only-dark"><img alt="Criteria order example" loading="lazy," src="../images/sheet_criteria_order_dark.png#only-dark" width="80%"/></a>
 </figure></p>
 <p>The above example will result in the criteria appearing as:</p>
 <ol>
@@ -1268,7 +1320,7 @@ creation form).</p>
 punctual tasting (see <a href="../../user/tasting/">Using Tastebuddy</a>). They can also be
 combined with a product list for tasting sessions (see <a href="./#tasting-session">the Tasting Session
 section</a> down below).</p>
-<h3 id="updating-an-existing-tasting-sheet">Updating an existing tasting sheet<a class="headerlink" href="#updating-an-existing-tasting-sheet" title="Permanent link">&para;</a></h3>
+<h3 id="updating-an-existing-tasting-sheet">Updating an existing tasting sheet<a class="headerlink" href="#updating-an-existing-tasting-sheet" title="Permanent link">¶</a></h3>
 <p>Existing tasting sheets can be updated by clicking on <code>Edit</code> in the
 corresponding row of the tasting grid table. Any change will be reflected in
 existing results: for example, dashboards of results will show the
@@ -1285,44 +1337,44 @@ grid.</p>
 evaluations is tantamount to modifying the tasting protocols, and therefore the
 comparison could become irrelevant.</p>
 </div>
-<h2 id="tasting-session">Tasting session<a class="headerlink" href="#tasting-session" title="Permanent link">&para;</a></h2>
-<h3 id="definition_2">Definition<a class="headerlink" href="#definition_2" title="Permanent link">&para;</a></h3>
+<h2 id="tasting-session">Tasting session<a class="headerlink" href="#tasting-session" title="Permanent link">¶</a></h2>
+<h3 id="definition_2">Definition<a class="headerlink" href="#definition_2" title="Permanent link">¶</a></h3>
 <p>A tasting session is the comparative evaluation of a number of similar products
 at the same time by one or more tasters, also known as a jury panel. It allows differences between 
 products to be highlighted and a ranking to be established between them.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M6 3C3.79 3 2 4.79 2 7s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m6 2h10v2H12zm0 14v-2h10v2zm0-8h10v2H12z"/></svg></span><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span> <strong class="lg middle">Tasting Session</strong></p>
-<hr />
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M6 3C3.79 3 2 4.79 2 7s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m6 2h10v2H12zm0 14v-2h10v2zm0-8h10v2H12z"></path></svg></span><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span> <strong class="lg middle">Tasting Session</strong></p>
+<hr/>
 <p>A tasting session has the following attributes:</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Name</strong></p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Tasting sheet</strong>: <em>the tasting grid used to evaluate each sample</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Scheduled date</strong>: <em>the date from which the tasting session will be accessible to the assigned users</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Accessible for (days)</strong>: <em>for how long should the session be accessible (default 7 days)</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Description</strong>: <em>a description of the tasting session which appears at the top of the form to the jury</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Hide sample</strong>: <em>whether the name of the samples are displayed to the tasters or not. If the switch is activated, the name of the products will be replaced by</em> "Product <em>n</em>";</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Assigned tasters</strong>: <em>the list of tasters invited to the comparative sensory evaluation</em>;</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> <strong>Sample list</strong>: <em>the list of sample in the order they are served</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Name</strong></p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Tasting sheet</strong>: <em>the tasting grid used to evaluate each sample</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Scheduled date</strong>: <em>the date from which the tasting session will be accessible to the assigned users</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Accessible for (days)</strong>: <em>for how long should the session be accessible (default 7 days)</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Description</strong>: <em>a description of the tasting session which appears at the top of the form to the jury</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Hide sample</strong>: <em>whether the name of the samples are displayed to the tasters or not. If the switch is activated, the name of the products will be replaced by</em> "Product <em>n</em>";</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Assigned tasters</strong>: <em>the list of tasters invited to the comparative sensory evaluation</em>;</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> <strong>Sample list</strong>: <em>the list of sample in the order they are served</em>;</p>
 </li>
 </ul>
 </div>
-<h3 id="creating-a-tasting-session">Creating a tasting session<a class="headerlink" href="#creating-a-tasting-session" title="Permanent link">&para;</a></h3>
+<h3 id="creating-a-tasting-session">Creating a tasting session<a class="headerlink" href="#creating-a-tasting-session" title="Permanent link">¶</a></h3>
 <p>Tasting sessions are associated with product types; to create a new tasting session, go
 to <a href="https://tastebuddy.io/protocols/">https://tastebuddy.io/protocols/</a> or click on <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Protocols</span></code> in the left sidebar or
 top right menu, and click on either <code>+ Create Spirits Tasting Session</code> or <code>+ Create Wine Tasting Session</code> above the appropriate table.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Access</label><label for="__tabbed_3_2">Creation form</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"/><input id="__tabbed_3_2" name="__tabbed_3" type="radio"/><div class="tabbed-labels"><label for="__tabbed_3_1">Access</label><label for="__tabbed_3_2">Creation form</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/session_creation.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy" src="../images/session_creation.png#only-light" /></a>
-<a class="glightbox" href="../images/session_creation_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy" src="../images/session_creation_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_creation.png#only-light"><img alt="Session creation" loading="lazy" src="../images/session_creation.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_creation_dark.png#only-dark"><img alt="Session creation" loading="lazy" src="../images/session_creation_dark.png#only-dark"/></a>
 </figure></p>
 </div>
 <div class="tabbed-block">
 <p><figure markdown="span">
-<a class="glightbox" href="../images/session_creation_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy," src="../images/session_creation_2.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/session_creation_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Session creation" loading="lazy," src="../images/session_creation_2_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_creation_2.png#only-light"><img alt="Session creation" loading="lazy," src="../images/session_creation_2.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_creation_2_dark.png#only-dark"><img alt="Session creation" loading="lazy," src="../images/session_creation_2_dark.png#only-dark" width="80%"/></a>
 </figure></p>
 </div>
 </div>
@@ -1335,7 +1387,7 @@ and the tasting sheets that apply to the product type in question will be
 available in the various drop-down menus.</p>
 <p>In case of error, a direct link to the other product type is available at the top of the page.</p>
 </div>
-<p><br>
+<p><br/>
 On the newly opened page, enter the following information:</p>
 <ul>
 <li><strong>Name</strong>;</li>
@@ -1374,9 +1426,9 @@ they won't be able to modify their records or access the tasting session anymore
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Ordering the samples</p>
-<p>The <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Position</span></code> field determines the order in which the samples<br />
+<p>The <code class="highlight"><span class="l l-Scalar l-Scalar-Plain">Position</span></code> field determines the order in which the samples<br>
 appear in the tasting grid. This order can therefore be different from the
-one that appears in the tasting session creation form.</p>
+one that appears in the tasting session creation form.</br></p>
 <p>This field can take either an integer or a decimal number, positive or
 negative: the samples can simply be labeled 1, 2, 3, ... but a new sample
 can also be easily inserted by using a decimal number (based on the example
@@ -1384,8 +1436,8 @@ above, setting a sample with <code class="highlight"><span class="nt">Position</
 position, even if it appears in the last position of the list on the
 creation form).</p>
 <p><figure markdown="span">
-<a class="glightbox" href="../images/sample_order.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="samples order example" loading="lazy," src="../images/sample_order.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/sample_order_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="samples order example" loading="lazy," src="../images/sample_order_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sample_order.png#only-light"><img alt="samples order example" loading="lazy," src="../images/sample_order.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sample_order_dark.png#only-dark"><img alt="samples order example" loading="lazy," src="../images/sample_order_dark.png#only-dark" width="80%"/></a>
 </figure></p>
 <p>The above example will result in the samples appearing as:</p>
 <ol>
@@ -1395,27 +1447,27 @@ creation form).</p>
 <li>Peated Whisky - Peated Scotch Whisky #4</li>
 </ol>
 </div>
-<h3 id="following-up-the-tasters-progress">Following up the tasters progress<a class="headerlink" href="#following-up-the-tasters-progress" title="Permanent link">&para;</a></h3>
+<h3 id="following-up-the-tasters-progress">Following up the tasters progress<a class="headerlink" href="#following-up-the-tasters-progress" title="Permanent link">¶</a></h3>
 <p>The progress of the assigned tasters can be followed live by the
 administrators. From the <a href="https://tastebuddy.io">home page</a>, in the <strong>TASTING
 PROGRESS</strong> card, click on the <ins class="critic">Progress</ins> button next to the corresponding
 tasting session to display the status of all the tasters.</p>
 <figure>
-<a class="glightbox" href="../images/session_home.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="session progress" loading="lazy," src="../images/session_home.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/session_home_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="session progress" loading="lazy," src="../images/session_home_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_home.png#only-light"><img alt="session progress" loading="lazy," src="../images/session_home.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/session_home_dark.png#only-dark"><img alt="session progress" loading="lazy," src="../images/session_home_dark.png#only-dark" width="80%"/></a>
 </figure>
 <div class="footnote">
-<hr />
+<hr/>
 <ol>
 <li id="fn:1">
 <p>Note: to show the sample names in the
 results dashboard, edit the tasting session after all results have been submitted
-and uncheck the box;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+and uncheck the box; <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
 <p>Currently only users with an account can be invited to a tasting session.
 Further development of TasteBuddy will open tasting sessions to <em>Anonymous
-users</em>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+users</em> <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -1480,6 +1532,12 @@ users</em>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to 
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -1550,13 +1608,21 @@ users</em>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to 
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

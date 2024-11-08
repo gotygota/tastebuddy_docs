@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -44,6 +44,8 @@
 
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -550,7 +552,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -649,6 +653,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -656,7 +664,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
@@ -694,11 +704,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../results/dashboards/" class="md-nav__link">
+      <a href="../../results/self-assessment-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
   </span>
   
 
@@ -825,18 +877,18 @@
                   
 
 
-<h1 id="products-management">Products management<a class="headerlink" href="#products-management" title="Permanent link">&para;</a></h1>
+<h1 id="products-management">Products management<a class="headerlink" href="#products-management" title="Permanent link">¶</a></h1>
 <p>The second building block of sensory evaluation, products can be either wines or
 spirits, which are evaluated by one or more tasters.</p>
-<h2 id="tasting-session-versus-one-off-tasting">Tasting session <em>versus</em> One-off tasting<a class="headerlink" href="#tasting-session-versus-one-off-tasting" title="Permanent link">&para;</a></h2>
+<h2 id="tasting-session-versus-one-off-tasting">Tasting session <em>versus</em> One-off tasting<a class="headerlink" href="#tasting-session-versus-one-off-tasting" title="Permanent link">¶</a></h2>
 <p>Before going into the details of product creation and updating, it is important
 to consider two use cases that require two different setups:</p>
 <ol>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span> <strong>Tasting
+<li><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span> <strong>Tasting
    session</strong>: understood as the comparative evaluation of a range or flight of
 products simultaneously, a tasting session requires the products to have been
 created beforehand;</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 14c0 1.3.8 2.4 2 2.8V20H3v2h6v-2H7v-3.2c1.2-.4 2-1.5 2-2.8V6H3zm2-6h2v3H5zm15.6.5-1-.3c-.3-.1-.6-.5-.6-.9V3c0-.5-.5-1-1-1h-3c-.6 0-1 .5-1 1v4.3c0 .4-.3.8-.7 1l-.9.3c-.8.3-1.4 1-1.4 1.9V20c0 1.1.9 2 2 2h7c1.1 0 2-.9 2-2v-9.6c0-.8-.5-1.6-1.4-1.9M16 4h1v1h-1zm-3 6.4.9-.3c1.3-.4 2.1-1.5 2.1-2.8V7h1v.3c0 1.3.8 2.4 2 2.8l1 .3V12h-7zm7 9.6h-7v-2h7z"/></svg></span> <strong>One-off tasting</strong>: understood as the evaluation of a
+<li><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 14c0 1.3.8 2.4 2 2.8V20H3v2h6v-2H7v-3.2c1.2-.4 2-1.5 2-2.8V6H3zm2-6h2v3H5zm15.6.5-1-.3c-.3-.1-.6-.5-.6-.9V3c0-.5-.5-1-1-1h-3c-.6 0-1 .5-1 1v4.3c0 .4-.3.8-.7 1l-.9.3c-.8.3-1.4 1-1.4 1.9V20c0 1.1.9 2 2 2h7c1.1 0 2-.9 2-2v-9.6c0-.8-.5-1.6-1.4-1.9M16 4h1v1h-1zm-3 6.4.9-.3c1.3-.4 2.1-1.5 2.1-2.8V7h1v.3c0 1.3.8 2.4 2 2.8l1 .3V12h-7zm7 9.6h-7v-2h7z"></path></svg></span> <strong>One-off tasting</strong>: understood as the evaluation of a
    single product <em>on the move</em>, a one-off tasting allows the creation of a
 product directly from the tasting grid. Existing products are automatically
 suggested, but a completely new sample can be automatically added to the
@@ -849,39 +901,39 @@ in the organisation's sample list. However, they will only be able to update or
 view the results of the product they have created. See the <a href="../../results/">Dashboard section</a> of
 the documentation.</p>
 </div>
-<h2 id="product-creation">Product creation<a class="headerlink" href="#product-creation" title="Permanent link">&para;</a></h2>
+<h2 id="product-creation">Product creation<a class="headerlink" href="#product-creation" title="Permanent link">¶</a></h2>
 <p>Tastebuddy covers two types of products: wines and spirits. Both are created and
 updated in the same way, albeit on different pages, but there are some
 differences in their characterisation.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"/></svg></span> <strong class="xl middle">Wines</strong></p>
-<hr />
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.5 21.27-.84-.09c-.76-.07-1.41-.58-1.66-1.31a11.5 11.5 0 0 1 0-6c2.32-.47 4-2.5 4-4.87 0-2-2-7-2-7H9S7 7 7 9a5 5 0 0 0 4 4.9c.53 1.96.53 4.04 0 6-.24.72-.88 1.23-1.63 1.31l-.87.09s-.5-.02-.5.7h8c0-.72-.5-.73-.5-.73M9.44 7l1-3h3.12l1 3z"></path></svg></span> <strong class="xl middle">Wines</strong></p>
+<hr/>
 <p>Wines take the following attributes:</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Name</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Category<sup id="fnref2:1" title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank"><a class="footnote-ref" href="#fn:1">1</a></sup> (<em>either of Red, White, Rosé, Sparkling, Fortified, Other</em>)</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Brand</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Country</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Region</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Description</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Alcohol content</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Vintage</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Varietal</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Name</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Category<sup id="fnref2:1" title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank"><a class="footnote-ref" href="#fn:1">1</a></sup> (<em>either of Red, White, Rosé, Sparkling, Fortified, Other</em>)</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Brand</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Country</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Region</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Description</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Alcohol content</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Vintage</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Varietal</p>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2h8c-.33.67-.67 1.33-.42 3s1.09 4.33.67 5.74c-.42 1.4-2.08 1.54-2.92 3.12-.83 1.58-.83 4.61-.25 6.04.59 1.43 1.75 1.27 2.34 1.35.58.08.58.42.58.75H8c0-.33 0-.67.58-.75.59-.08 1.75.08 2.34-1.35.58-1.43.58-4.46-.25-6.04-.84-1.58-2.5-1.72-2.92-3.12-.42-1.41.42-4.07.67-5.74S8.33 2.67 8 2m2 2c0 1.19-.17 2.17-.36 3h4.63c-.14-.83-.27-1.81-.27-3z"/></svg></span> <strong>Spirits</strong></p>
-<hr />
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 2h8c-.33.67-.67 1.33-.42 3s1.09 4.33.67 5.74c-.42 1.4-2.08 1.54-2.92 3.12-.83 1.58-.83 4.61-.25 6.04.59 1.43 1.75 1.27 2.34 1.35.58.08.58.42.58.75H8c0-.33 0-.67.58-.75.59-.08 1.75.08 2.34-1.35.58-1.43.58-4.46-.25-6.04-.84-1.58-2.5-1.72-2.92-3.12-.42-1.41.42-4.07.67-5.74S8.33 2.67 8 2m2 2c0 1.19-.17 2.17-.36 3h4.63c-.14-.83-.27-1.81-.27-3z"></path></svg></span> <strong>Spirits</strong></p>
+<hr/>
 <p>Wines take the following attributes:</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Name</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Category<sup id="fnref:1" title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank"><a class="footnote-ref" href="#fn:1">1</a></sup> (<em>Any category can be created</em>)</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Brand</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Country</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Region</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Description</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Alcohol content</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Age (in months)</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"/></svg></span> Sugar content (in g/L)</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Name</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Category<sup id="fnref:1" title="This information is required on product creation. If irrelevant or unavailable, the other fields can be left blank"><a class="footnote-ref" href="#fn:1">1</a></sup> (<em>Any category can be created</em>)</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Brand</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Country</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Region</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Description</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Alcohol content</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Age (in months)</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708"></path></svg></span> Sugar content (in g/L)</p>
 </li>
 </ul>
 </div>
@@ -890,8 +942,8 @@ differences in their characterisation.</p>
 <li>To add a new spirit, go to <a href="https://tastebuddy.io/products/spirit/">https://tastebuddy.io/products/spirit/</a> and click <code>+ Add spirit</code></li>
 </ul>
 <figure>
-<a class="glightbox" href="../images/product.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Product creation" loading="lazy" src="../images/product.png#only-light" /></a>
-<a class="glightbox" href="../images/product_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Product creation" loading="lazy" src="../images/product_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/product.png#only-light"><img alt="Product creation" loading="lazy" src="../images/product.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/product_dark.png#only-dark"><img alt="Product creation" loading="lazy" src="../images/product_dark.png#only-dark"/></a>
 </figure>
 <p>Products can also be created directly from an existing tasting grid (for
 <em>one-off tastings</em>). Existing categories and products are automatically
@@ -906,7 +958,7 @@ results.</p>
 <p>If some products are duplicates and need to be merged, please contact us
 <a href="https://tastebuddy.io/contact/">using this form</a> or any other means linked to your account.</p>
 </div>
-<h2 id="updating-product-information">Updating product information<a class="headerlink" href="#updating-product-information" title="Permanent link">&para;</a></h2>
+<h2 id="updating-product-information">Updating product information<a class="headerlink" href="#updating-product-information" title="Permanent link">¶</a></h2>
 <p>Products can be updated by clicking <code>Edit</code> on the relevant row in the product
 table available on the corresponding product type page:</p>
 <ul>
@@ -920,15 +972,15 @@ practice to characterise products as thoroughly as possible, as this information
 can be used to analyse trends and compare products over time.</p>
 </div>
 <figure>
-<a class="glightbox" href="../images/product_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Product update" loading="lazy," src="../images/product_2.png#only-light" width="80%" /></a>
-<a class="glightbox" href="../images/product_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Product update" loading="lazy," src="../images/product_2_dark.png#only-dark" width="80%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/product_2.png#only-light"><img alt="Product update" loading="lazy," src="../images/product_2.png#only-light" width="80%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/product_2_dark.png#only-dark"><img alt="Product update" loading="lazy," src="../images/product_2_dark.png#only-dark" width="80%"/></a>
 </figure>
 <div class="footnote">
-<hr />
+<hr/>
 <ol>
 <li id="fn:1">
 <p>This information is required on product creation. All the other fields can
-be left blank if the information is irrelevant or unavailable&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+be left blank if the information is irrelevant or unavailable <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -993,6 +1045,12 @@ be left blank if the information is irrelevant or unavailable&#160;<a class="foo
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -1063,13 +1121,21 @@ be left blank if the information is irrelevant or unavailable&#160;<a class="foo
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

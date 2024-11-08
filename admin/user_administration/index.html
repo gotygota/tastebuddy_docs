@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -44,6 +44,8 @@
 
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -592,7 +594,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -691,6 +695,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -698,7 +706,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
@@ -736,11 +746,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../results/dashboards/" class="md-nav__link">
+      <a href="../../results/self-assessment-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../results/session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
   </span>
   
 
@@ -909,11 +961,11 @@
                   
 
 
-<h1 id="user-administration">User administration<a class="headerlink" href="#user-administration" title="Permanent link">&para;</a></h1>
+<h1 id="user-administration">User administration<a class="headerlink" href="#user-administration" title="Permanent link">¶</a></h1>
 <p>First builiding block of Tastebuddy, the users are the tasters or assessors.
 They will be able to use the pre-defined protocols to analyze the product,
 either during tasting sessions or as punctual tastings.</p>
-<h2 id="about-roles">About roles<a class="headerlink" href="#about-roles" title="Permanent link">&para;</a></h2>
+<h2 id="about-roles">About roles<a class="headerlink" href="#about-roles" title="Permanent link">¶</a></h2>
 <p>There are two main types of users:</p>
 <ol>
 <li><strong>Regular user</strong>: has access to all available tasting sheets, can perform
@@ -933,15 +985,15 @@ either during tasting sessions or as punctual tastings.</p>
 <p>There also exists one <code>SuperUser</code>, who supersed the administrators and whose
 role cannot be changed.</p>
 <p>The following sections assume that the user has administrator access.</p>
-<h2 id="adding-users">Adding users<a class="headerlink" href="#adding-users" title="Permanent link">&para;</a></h2>
+<h2 id="adding-users">Adding users<a class="headerlink" href="#adding-users" title="Permanent link">¶</a></h2>
 <p>New users can be added to your organisation by sending them a unique link to create an account.</p>
 <p>Go to <a href="https://tastebuddy.io/users/">https://tastebuddy.io/users/</a> or click
-<code>Users</code> in the left sidebar or top right menu <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"/></svg></span>. In the <code>ADD USERS</code> section, enter the email address of
+<code>Users</code> in the left sidebar or top right menu <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"></path></svg></span>. In the <code>ADD USERS</code> section, enter the email address of
 the user you want to invite, then click <code>Send</code> (one address at a time). The system
 will send a link to the specified email address that the user can follow to
 create their account and connect to the application.</p>
-<p><a class="glightbox" href="../images/user_invite.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User invitation section" loading="lazy" src="../images/user_invite.png#only-light" /></a>
-<a class="glightbox" href="../images/user_invite_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User invitation section" loading="lazy" src="../images/user_invite_dark.png#only-dark" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_invite.png#only-light"><img alt="User invitation section" loading="lazy" src="../images/user_invite.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_invite_dark.png#only-dark"><img alt="User invitation section" loading="lazy" src="../images/user_invite_dark.png#only-dark"/></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Invitations have an expiration date</p>
 <p>The invitation sent to the email address contains a link that expires after
@@ -953,22 +1005,22 @@ whether it is still pending or has already expired, will result in an error.</p>
 <p>If the email hasn't been received or if the link has already expired, use the
 table at the bottom of the page that shows pending and expired invitations to
 send a new link.</p>
-<p><a class="glightbox" href="../images/user_invite_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2.png#only-light" /></a>
-<a class="glightbox" href="../images/user_invite_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2_dark.png#only-dark" /></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_invite_2.png#only-light"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_invite_2_dark.png#only-dark"><img alt="Invitation status section" loading="lazy" src="../images/user_invite_2_dark.png#only-dark"/></a></p>
 </div>
-<h2 id="updating-a-users-profile">Updating a user's profile<a class="headerlink" href="#updating-a-users-profile" title="Permanent link">&para;</a></h2>
+<h2 id="updating-a-users-profile">Updating a user's profile<a class="headerlink" href="#updating-a-users-profile" title="Permanent link">¶</a></h2>
 <p>You can quickly edit a user's profile by clicking <code>Edit</code> in the Users table.</p>
 <figure>
-<a class="glightbox" href="../images/user_edit.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile edition" loading="lazy" src="../images/user_edit.png#only-light" /></a>
-<a class="glightbox" href="../images/user_edit_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile edition" loading="lazy" src="../images/user_edit_dark.png#only-dark" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_edit.png#only-light"><img alt="User profile edition" loading="lazy" src="../images/user_edit.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_edit_dark.png#only-dark"><img alt="User profile edition" loading="lazy" src="../images/user_edit_dark.png#only-dark"/></a>
 </figure>
-<h3 id="personal-information">Personal information<a class="headerlink" href="#personal-information" title="Permanent link">&para;</a></h3>
+<h3 id="personal-information">Personal information<a class="headerlink" href="#personal-information" title="Permanent link">¶</a></h3>
 <p>You can easily update a user's first name, last name, date of birth,
 nationality, and gender using the quick form. Update all relevant data and click
 <code>Update</code>.</p>
 <figure>
-    <a class="glightbox" href="../images/user_edit_2.png#only-light" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile edition" loading="lazy," src="../images/user_edit_2.png#only-light" width="70%" /></a>
-    <a class="glightbox" href="../images/user_edit_2_dark.png#only-dark" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile edition" loading="lazy," src="../images/user_edit_2_dark.png#only-dark" width="70%" /></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_edit_2.png#only-light"><img alt="User profile edition" loading="lazy," src="../images/user_edit_2.png#only-light" width="70%"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/user_edit_2_dark.png#only-dark"><img alt="User profile edition" loading="lazy," src="../images/user_edit_2_dark.png#only-dark" width="70%"/></a>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">About personal information</p>
@@ -976,7 +1028,7 @@ nationality, and gender using the quick form. Update all relevant data and click
 as this can provide valuable insights about taste sensitivities and consumer
 profiling in the long run. Encourage the users to do so!</p>
 </div>
-<h3 id="role">Role<a class="headerlink" href="#role" title="Permanent link">&para;</a></h3>
+<h3 id="role">Role<a class="headerlink" href="#role" title="Permanent link">¶</a></h3>
 <p>Administrators can promote any regular user to the administrator role by
 checking the <code>Make admin</code> box. They will automatically get access to all pages and
 data of the organisation.</p>
@@ -987,13 +1039,13 @@ administrators to regular users.</p>
 <p class="admonition-title">Switching SuperUser</p>
 <p>To assign the SuperUser role to a new user, please <a href="https://tastebuddy.io/contact/">contact us</a>.</p>
 </div>
-<h3 id="login-information">Login information<a class="headerlink" href="#login-information" title="Permanent link">&para;</a></h3>
+<h3 id="login-information">Login information<a class="headerlink" href="#login-information" title="Permanent link">¶</a></h3>
 <p>Only users themselves can update their own password and email
 address, by accessing their profile at
 <a href="https://tastebuddy.io/users/update/">https://tastebuddy.io/users/update/</a>. A
 new confirmation email will be sent to the new email address in order to
 confirm its validity before the change is effective.</p>
-<h2 id="users-deletion">User's deletion<a class="headerlink" href="#users-deletion" title="Permanent link">&para;</a></h2>
+<h2 id="users-deletion">User's deletion<a class="headerlink" href="#users-deletion" title="Permanent link">¶</a></h2>
 <p>Since a user may have provided useful sensory information, their access may be
 revoked instead of simply deleting their account. A deactivated user cannot log
 in to the platform anymore, and no licence fee incurs to deactivated accounts.</p>
@@ -1070,6 +1122,12 @@ SUCH ACTION IS IRREVOCABLE</strong></p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -1139,13 +1197,21 @@ SUCH ACTION IS IRREVOCABLE</strong></p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

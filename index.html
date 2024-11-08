@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -42,6 +42,8 @@
 
     
       <link rel="stylesheet" href="stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -421,7 +423,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           
@@ -546,7 +550,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -645,6 +651,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -652,7 +662,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
@@ -690,11 +702,53 @@
   
   
     <li class="md-nav__item">
-      <a href="results/dashboards/" class="md-nav__link">
+      <a href="results/self-assessment-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="results/product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="results/session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
   </span>
   
 
@@ -821,12 +875,12 @@
                   
 
 
-<h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">¶</a></h1>
 <p>Let's walk through the core concepts of the TasteBuddy application, how to manage
 user accounts and profiles, tasting protocols, products, and how to conduct
 sensory evaluations of wines and spirits and analyse the results of a sensory
 evaluation.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
 <p>By its very nature, any sensory analysis, whether of spirits, wine, perfume
 or food, is inherently subjective. Many factors have been shown to influence the
 judgement of the taster, whose evaluation of the same product can vary from
@@ -842,7 +896,7 @@ in order to highlight agreements and disagreements between the tasters, possible
 shortcomings in the sensory analysis, the evolution of the sensory profile of
 the products or their perception, and to evaluate the opinion of consumers with
 maximum objectivity.</p>
-<h2 id="about-this-documentation">About this documentation<a class="headerlink" href="#about-this-documentation" title="Permanent link">&para;</a></h2>
+<h2 id="about-this-documentation">About this documentation<a class="headerlink" href="#about-this-documentation" title="Permanent link">¶</a></h2>
 <p>TasteBuddy users are divided into two categories, or <code>roles</code>. What a user can do
 or see is based on this role, further referred as either 'Admin' or 'Regular
 User'. This documentation is therefore split between these two main roles:</p>
@@ -852,7 +906,7 @@ User'. This documentation is therefore split between these two main roles:</p>
 </ul>
 <p>If you are unsure of your permissions and role, <a href="https://tastebuddy.io/users/update/">access your TasteBuddy profile page</a>
 and look at the badge next to your name.</p>
-<h2 id="current-development">Current development<a class="headerlink" href="#current-development" title="Permanent link">&para;</a></h2>
+<h2 id="current-development">Current development<a class="headerlink" href="#current-development" title="Permanent link">¶</a></h2>
 <p>Tastebuddy is still in active development, and may be a little rough around
 the edges. Expect the unexpected!</p>
 <p>Registrations are currently invite only. If you would like to get early access,
@@ -919,6 +973,12 @@ please <a href="https://tastebuddy.io/contact/">get in touch with us</a>.</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -972,13 +1032,21 @@ please <a href="https://tastebuddy.io/contact/">get in touch with us</a>.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
