@@ -45,8 +45,6 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1104,16 +1102,16 @@ zoom out;</li>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_sample_ranking.png"><img alt="Sample ranking" loading="lazy," src="../images/sa_sample_ranking.png" width="75%"/></a>
 </figure>
 <h3 id="scores-delta">Scores delta<a class="headerlink" href="#scores-delta" title="Permanent link">¶</a></h3>
-<p>The score delta chart plots the difference <span class="arithmatex">\(\Delta score\)</span> between a taster's score
-and the consensus score (calculated as the mean <span class="arithmatex">\(\overline{score}\)</span> of all taster
-scores) for each sample in the flight, in order of service from left to right: <span class="arithmatex">\(\Delta score = score_{taster} - \overline{score}\)</span></p>
+<p>The score delta chart plots the difference Δ<em>score</em> between a taster's score
+and the consensus score (calculated as the mean of all taster
+scores) for each sample in the flight, in order of service from left to right.</p>
 <figure>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_delta.webp"><img alt="Delta" loading="lazy," src="../images/sa_delta.webp" width="65%"/></a>
 </figure>
 <p>For example, if you scored the first product of the flight at 88, while the
 the panel average was 80, then the first point on the left of the graph will
-be at <span class="arithmatex">\(y=8\)</span> on the vertical axis. A point aligned with the consensus line at
-<span class="arithmatex">\(y=0\)</span> would correspond to an equality between your score and that of the panel,
+be at <em>y=8</em> on the vertical axis. A point aligned with the consensus line at
+<em>y=0</em> would correspond to an equality between your score and that of the panel,
 while a negative value would indicate a score below the panel average.</p>
 <p>The aim is to highlight a possible <strong><a href="../#level-discrepancy">difference in
 level</a></strong> between you and the jury.</p>
@@ -1226,13 +1224,49 @@ your own line (showing good agreement between you, but not necessarily with
 the rest of the jury).</p>
 </div>
 <h3 id="scores-spread-per-sample">Scores spread per sample<a class="headerlink" href="#scores-spread-per-sample" title="Permanent link">¶</a></h3>
+<p>Similar to the <a href="./#scores-spread-per-assessor">score spread per assessor</a>,
+the score spread per sample is a box plot of the scores given to each sample in
+the flight, in order of service. Each of the boxes shows the distribution of the
+scores given to a sample by all judges in the panel.</p>
 <figure>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_sample_boxplot.png"><img alt="Samples' scores boxplot" loading="lazy," src="../images/sa_sample_boxplot.png" width="75%"/></a>
 </figure>
+<p>It provides an estimate of the <a href="../#disagreement">panel agreement</a> per sample.
+The larger the distribution of scores for a given sample, the larger the
+differences in the scores and thus the panel disagreement. </p>
+<p>Note, however, that both level and scaling differences in the tasters' scoring
+style can have a strong influence on this graph: a relatively large
+but fairly similar score distribution between samples could be due to a large
+level difference between the tasters; large scaling differences, in turn, could
+result in some small boxes for the "average" products, with a larger distribution
+for the higher/lower ranked products.</p>
+<div class="admonition example">
+<p class="admonition-title">What to look for</p>
+<p>Keeping in mind the level and scaling differences as illustrated on the
+<a href="#scores-spread-per-assessor">score spread per taster chart</a>, compare the
+samples with the largest score distributions to your ranking and score delta: do 
+you find your largest disagreement with the panel consensus to be for samples 
+with a good agreement, or are they in fact the samples that failed to reach
+consensus within the panel?</p>
+</div>
 <h3 id="wordcloud">Wordcloud<a class="headerlink" href="#wordcloud" title="Permanent link">¶</a></h3>
+<p>The word cloud graph is a treemap of the words found in the corpus of tasting
+notes (all tasters included); it shows the relative frequency or importance of 
+the different vocables within the corpus.</p>
 <figure>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_treemap.png"><img alt="Word treemap" loading="lazy," src="../images/sa_treemap.png" width="75%"/></a>
 </figure>
+<p>Depending on the tasting protocol, different colours refer either to different
+categories of criteria (e.g. Nose, Palate, General, etc.) or to different
+criteria (e.g. Expressiveness in the nose, Flavour complexity on palate, etc.). A
+single colour indicates general tasting notes which are not related to a
+specific criterion.</p>
+<div class="admonition info">
+<p class="admonition-title">Removed words</p>
+<p>The text corpus is first trimmed of some of the most common words (such as
+"the", "and", "this", etc) that are not expected to provide any meaningful
+information.</p>
+</div>
 
 
 
@@ -1361,6 +1395,21 @@ the rest of the jury).</p>
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://tastebuddy.io" target="_blank" rel="noopener" title="tastebuddy.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2h8c-.33.67-.67 1.33-.42 3s1.09 4.33.67 5.74c-.42 1.4-2.08 1.54-2.92 3.12-.83 1.58-.83 4.61-.25 6.04.59 1.43 1.75 1.27 2.34 1.35.58.08.58.42.58.75H8c0-.33 0-.67.58-.75.59-.08 1.75.08 2.34-1.35.58-1.43.58-4.46-.25-6.04-.84-1.58-2.5-1.72-2.92-3.12-.42-1.41.42-4.07.67-5.74S8.33 2.67 8 2m2 2c0 1.19-.17 2.17-.36 3h4.63c-.14-.83-.27-1.81-.27-3z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1377,12 +1426,6 @@ the rest of the jury).</p>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
-      
-        <script src="../../javascripts/katex.js"></script>
-      
-        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
-      
-        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
         <script src="../../js/open_in_new_tab.js"></script>
       
