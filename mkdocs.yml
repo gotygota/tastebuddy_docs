@@ -46,12 +46,6 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-  - https://unpkg.com/katex@0/dist/katex.min.css
-
-extra_javascript:
-  - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra:
   analytics:
@@ -73,7 +67,10 @@ extra:
           data: bad
           note: >-
             Thanks for your feedback! We'll make sure to update the content to be more thorough.
-#
+  social:
+    - icon: material/glass-tulip
+      link: https://tastebuddy.io
+
 plugins:
   - search
   - open-in-new-tab
@@ -89,8 +86,6 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.caret
   - pymdownx.critic:
       mode: view

@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.tastebuddy.io/results/dashboards/">
+        <link rel="canonical" href="https://docs.tastebuddy.io/results/self-assessment-dashboard/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../charts/">
+        <link rel="next" href="../product-dashboard/">
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Dashboards - Tastebuddy Documentation</title>
+        <title>Taster self assessment dashboard - Tastebuddy Documentation</title>
       
     
     
@@ -44,6 +44,8 @@
 
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -132,7 +134,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dashboards" class="md-skip">
+        <a href="#taster-self-assessment" class="md-skip">
           Skip to content
         </a>
       
@@ -188,7 +190,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dashboards
+              Taster self assessment dashboard
             
           </span>
         </div>
@@ -356,7 +358,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           
@@ -481,7 +485,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -582,6 +588,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -636,16 +646,175 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Taster self assessment dashboard
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preamble-sensory-evaluation-is-an-opinion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preamble: sensory evaluation is an opinion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-a-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing a dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample ranking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores delta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-spread-per-assessor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores spread per assessor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agreement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-spread-per-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores spread per sample
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wordcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wordcloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -720,6 +889,101 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preamble-sensory-evaluation-is-an-opinion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preamble: sensory evaluation is an opinion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-a-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing a dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample ranking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores delta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-spread-per-assessor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores spread per assessor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agreement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scores-spread-per-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scores spread per sample
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wordcloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wordcloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -733,12 +997,242 @@
                   
 
 
-<h1 id="dashboards">Dashboards<a class="headerlink" href="#dashboards" title="Permanent link">&para;</a></h1>
+<h1 id="taster-self-assessment">Taster self-assessment<a class="headerlink" href="#taster-self-assessment" title="Permanent link">¶</a></h1>
 <div class="admonition tools">
 <p class="admonition-title">Work in progress</p>
 <p>This site is still under construction. Please come back later for further
 information and documentation.</p>
 </div>
+<h2 id="preamble-sensory-evaluation-is-an-opinion">Preamble: sensory evaluation is an opinion<a class="headerlink" href="#preamble-sensory-evaluation-is-an-opinion" title="Permanent link">¶</a></h2>
+<p>The taster self-assessment dashboards are <strong>individual and specific to the
+logged-in user</strong>. They focus on the user's own ratings <strong>in relation to the
+ratings of other tasters</strong>. Only the user themselves can access their own
+dashboards.</p>
+<p>When evaluating a wine or a spirit, a taster gives his or her own opinion about
+the product. When a panel of tasters evaluate the same product together, we want
+to understand if there is a consensus in the opinions of a group of people,
+either a general consensus or multiple opinions that could be sorted based on
+sociological, cultural or professional backgrounds.</p>
+<p>In order to highlight the consensus, if there is one, the <a href="../#expected-differences-between-tasters">differences between
+the tasters</a> need to be reduced
+as much as possible, so that the results themselves can be trusted. Although the
+data can be processed to a certain extent to reduce these differences, the
+tasters themselves need to be aware of their evaluation style <strong>in relation to
+other tasters</strong> so that they can adapt and improve.</p>
+<p>This is the purpose of the self-assessment dashboards: to show a taster whether
+his or her ratings and use of the tools are similar enough to those of other
+tasters, and he or she shares the same opinion as others.</p>
+<h2 id="accessing-a-dashboard">Accessing a dashboard<a class="headerlink" href="#accessing-a-dashboard" title="Permanent link">¶</a></h2>
+<p>Taster self-assessment dashboards are linked to tasting sessions. Once all
+assigned tasters have completed the tasting (or once the
+delay for completion has elapsed), the results dashboards can be accessed by clicking
+on <code>Dashboards</code> in the left sidebar or in the top right menu
+<span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"></path></svg></span>. Navigate to the <strong>TASTING SESSION DASHBOARDS</strong> section,
+and click <code>View results</code> in the table next to the relevant session.</p>
+<div class="admonition info">
+<p class="admonition-title">Complete, Unfinished, In Progress</p>
+<p>You will notice a badge inside the table with either a green <em>Complete</em>, or
+red <em>Unfinished</em>. These badges indicates the status of the tasting session:</p>
+<ul>
+<li><em>Complete</em> indicates all tasters have complete the tasting sessions. <strong>You can
+view all the results</strong>;</li>
+<li><em>Unfinished</em> indicates that the timeframe during which the tasting session
+was made available has passed, but not all assigned tasters have completed
+it. <strong>You can view the results but they will be incomplete</strong>;</li>
+</ul>
+</div>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/self_assess_access.png#only-light"><img alt="Dashboard access" loading="lazy" src="../images/self_assess_access.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/self_assess_access_dark.png#only-dark"><img alt="Dashboard access" loading="lazy" src="../images/self_assess_access_dark.png#only-dark"/></a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Dashboards should be displayed on a big enough screen</p>
+<p>Although dashboards can be accessed from a mobile device such as a smartphone,
+there must be enough screen space needs to view the charts. We strongly recommend
+that you view the dashboards on a desktop or tablet screen, as a smartphone
+tends to cut off the charts, making them difficult to read.</p>
+</div>
+<h2 id="dashboard-overview">Dashboard overview<a class="headerlink" href="#dashboard-overview" title="Permanent link">¶</a></h2>
+<p>Your self-assessment dashboard is designed to compare your results with the
+panel consensus, i.e. the average of the panel. It therefore shows the <strong>raw
+data</strong>, or data with very little <em>pre-processing</em>.</p>
+<p>Each graph should provide some information about your scoring style and
+preferences, but it is important to look at all the graphs at once before
+jumping to conclusions: usually the information provided by one graph will help
+you understand the next, either confirming or nuancing the results of each
+individual graph.</p>
+<p>It is therefore highly recommended that you read the following sections
+carefully, in order to understand the purpose of each chart and to see the
+bigger picture.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"></path></svg></span> <strong>TL;DR</strong></p>
+<hr/>
+<p>In order of appearance:</p>
+<ul>
+<li><strong>Sample ranking</strong> shows the ranking and average scores of the samples from best to worst
+according to the consensus (in green) compared to your own score (in pink) for
+each sample;</li>
+<li><strong>Score delta</strong> shows the difference between the consensus score
+(panel average) and your score for each sample in order of tasting;</li>
+<li><strong>Score spread per assessor</strong> shows the score spread and quartiles
+for each judge over the tasting session (your results first on the left);</li>
+<li><strong>Agreement</strong> gives a visual representation of the overall
+agreement of the panel, independent of the absolute scores (based on ranking only);</li>
+<li><strong>Score spread per sample</strong> shows the distribution of scores per sample
+across the panel;</li>
+<li><strong>Tasting notes treemap</strong> shows the frequency of words found in the
+tasting notes corpus. </li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">The charts are interactive</p>
+<p>The charts can be interacted with in a number of ways. The interactions
+depend on the chart type but in general you can:</p>
+<ul>
+<li>Hover over the chart to see more details about the numbers;</li>
+<li>Click and Drag to zoom in on a specific area of the graph; scroll down to
+zoom out;</li>
+<li>Clicking on the legend activates/deactivates that part of the graph.</li>
+</ul>
+</div>
+<h3 id="sample-ranking">Sample ranking<a class="headerlink" href="#sample-ranking" title="Permanent link">¶</a></h3>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_sample_ranking.png"><img alt="Sample ranking" loading="lazy," src="../images/sa_sample_ranking.png" width="75%"/></a>
+</figure>
+<h3 id="scores-delta">Scores delta<a class="headerlink" href="#scores-delta" title="Permanent link">¶</a></h3>
+<p>The score delta chart plots the difference <span class="arithmatex">\(\Delta score\)</span> between a taster's score
+and the consensus score (calculated as the mean <span class="arithmatex">\(\overline{score}\)</span> of all taster
+scores) for each sample in the flight, in order of service from left to right: <span class="arithmatex">\(\Delta score = score_{taster} - \overline{score}\)</span></p>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_delta.webp"><img alt="Delta" loading="lazy," src="../images/sa_delta.webp" width="65%"/></a>
+</figure>
+<p>For example, if you scored the first product of the flight at 88, while the
+the panel average was 80, then the first point on the left of the graph will
+be at <span class="arithmatex">\(y=8\)</span> on the vertical axis. A point aligned with the consensus line at
+<span class="arithmatex">\(y=0\)</span> would correspond to an equality between your score and that of the panel,
+while a negative value would indicate a score below the panel average.</p>
+<p>The aim is to highlight a possible <strong><a href="../#level-discrepancy">difference in
+level</a></strong> between you and the jury.</p>
+<div class="admonition example">
+<p class="admonition-title">What to look for</p>
+<p>The points should be distributed relatively evenly around the horizontal black
+dashed line at <em>y=0</em>. If you find that you are systematically above
+(or below) the black dashed line, you have been more generous
+(or harsher) in your scoring than the rest of your jury and you should
+adjust your use of the scale (on the <em>level</em>).</p>
+<p>You <strong>should not punctually stray away</strong> too far from the black dash line:
+this would indicate a disagreement with the rest of the panel for the sample in
+question. However, it is not necessarily a bad thing if most of your scores are
+far away from 0 and relatively evenly distributed. It would mean that your
+scoring range was wider than the rest of your panel, which is usually a good
+thing (see <a href="./#scores-spread-per-assessor">scores spread per assessor
+below</a>)</p>
+</div>
+<h3 id="scores-spread-per-assessor">Scores spread per assessor<a class="headerlink" href="#scores-spread-per-assessor" title="Permanent link">¶</a></h3>
+<p>The score spread per taser is a box plot of the scores of each tasters on the
+panel. Your own scores are displayed first on the left. Each one of the box plot
+shows the distribution of scores for each assessor: the <em>whiskers</em> extending
+from the box represent the maximum and minimum scores, the coloured box is where
+the middle 50% of the scores lie (all scores between the 25th and 75th percentiles),
+and the line between the two shades of blue within the box is the median
+score.</p>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_assessor_boxplot.png"><img alt="Assessors' scores boxplot" loading="lazy," src="../images/sa_assessor_boxplot.png" width="75%"/></a>
+</figure>
+<p>It allows an easy comparison between judges' scoring patterns and a
+visual representation of their confidence:</p>
+<ol>
+<li>First, like the <a href="./#scores-delta">Scores delta
+   chart</a>, it gives a quick visual
+indication of the <strong><a href="../#level-discrepancy">level difference</a></strong> within the
+panel;</li>
+<li>Secondly, it shows the <strong><a href="../#scaling-difference">scaling difference</a></strong>
+   within the panel and can be understood as a representation of a judge's
+confidence: the wider the plot, the more the judge is able to discriminate
+products on the basis of their quality (e.g. a mediocre product will receive a low
+score of 40 out of 100, while an excellent one will receive a score of 98). A
+more ``shy" taster will show a narrower box-and-whisker plot.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">What to look for</p>
+<p>You should aim for as large the box-and-whisker as possible. Unless, of
+course, all the samples evaluated are really of the same quality, a clear
+distinction between them is much more helpful for further analysis (especially
+when assessing the <a href="./#agreement">panel agreement</a>).</p>
+<p>Also check for possible additional information about your level difference. You
+may find that it is <em>"localised"</em>: if your median (the separation between the
+two shades of blue) is quite in line with the rest of the panel, but your box
+spread is much higher (or lower) than the rest of the panel, this indicates that
+you are much more generous (or harsher) with good (or bad) products, but aligned
+with the consensus on average and bad (or good).</p>
+</div>
+<h3 id="agreement">Agreement<a class="headerlink" href="#agreement" title="Permanent link">¶</a></h3>
+<p>The agreement chart, sometimes also called an <em>egg plot</em>, is designed to give a
+visual indication of how similar the judges' <strong>sample rankings</strong> are within the
+panel. It does not take into account the scoring itself, so it is independent of
+any <a href="../#level-discrepancy">level discrepancy</a>. However, it is strongly
+dependent on the <a href="../#scaling-difference">scaling</a> of all the judges: if
+they each individually gave very similar scores to each sample of the flight
+(which would result in very small <a href="./#scores-spread-per-assessor">box-and-whiskers plots as explained
+above</a>), the resulting
+plot may give very little information at all.</p>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_agreement.png"><img alt="Agreement Egg plot" loading="lazy," src="../images/sa_agreement.png" width="75%"/></a>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">Don't pay attention to the y-axis values</p>
+<p>The <em>x-axis</em> can be understood as the ranking of the products from left to
+right, with the first sample on the left being the one with the lowest average score, and the
+last one on the right being the one with the highest score, calculated as the
+panel average.</p>
+<p>However, the values on the <em>y-axis</em> are meaningless: they are
+merely a mathematical transformation of the comparison between the ranking of the
+samples according to the consensus and according to each individual taster.
+The number of samples, of judges, or the differences themselves can give
+completely different values.</p>
+<p>In other words, <strong>focus on the shape of the lines, not the values</strong>.</p>
+</div>
+<p>The baseline in black represents the consensus ranking, and the ideal
+situation where there is a perfect agreement between all tasters: if this were the
+case, all coloured lines would be identical to the baseline. The coloured lines
+represent each taster's "deviation" from the consensus ranking: the further
+a coloured line is from the baseline, the greater the deviation between the
+taster's ranking and the consensus.</p>
+<div class="admonition example">
+<p class="admonition-title">What to look for</p>
+<p>First, consider these three cases:</p>
+<ol>
+<li>A panel in good agreement and able to clearly discriminate samples will see
+all the lines tending towards the black baseline and closely packed;</li>
+<li>A judge who often disagrees with the rest of the panel, while all are
+able to discriminate clearly, will see his or her line drifting away from the
+closely packed lines of the other judges. The other judges will stand close to
+the black base line;</li>
+<li>A panel who is lacking precision in their evaluation (i.e. is not able to
+   discriminate clearly all the products) will see a relatively dense group
+of individual lines away from the baseline.</li>
+</ol>
+<p>If you see a graph that seems to fit in the third case, you should probably
+disregard it entirely, as it may not provide any useful information.</p>
+<p>Otherwise, compare your own line with the rest of the jury: how far are you from the
+baseline (the further away, the more you disagree with the rest of the jury),
+are you closer for the higher or lower ranks (showing good agreement for either
+the best or the worst samples of the flight), is another judge very close to
+your own line (showing good agreement between you, but not necessarily with
+the rest of the jury).</p>
+</div>
+<h3 id="scores-spread-per-sample">Scores spread per sample<a class="headerlink" href="#scores-spread-per-sample" title="Permanent link">¶</a></h3>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_sample_boxplot.png"><img alt="Samples' scores boxplot" loading="lazy," src="../images/sa_sample_boxplot.png" width="75%"/></a>
+</figure>
+<h3 id="wordcloud">Wordcloud<a class="headerlink" href="#wordcloud" title="Permanent link">¶</a></h3>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_treemap.png"><img alt="Word treemap" loading="lazy," src="../images/sa_treemap.png" width="75%"/></a>
+</figure>
 
 
 
@@ -801,6 +1295,12 @@ information and documentation.</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -827,13 +1327,13 @@ information and documentation.</p>
         
         
           
-          <a href="../charts/" class="md-footer__link md-footer__link--next" aria-label="Next: Reading the charts">
+          <a href="../product-dashboard/" class="md-footer__link md-footer__link--next" aria-label="Next: Individual product dashboard">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Reading the charts
+                Individual product dashboard
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -870,13 +1370,21 @@ information and documentation.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

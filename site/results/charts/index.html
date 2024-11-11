@@ -11,14 +11,14 @@
         <link rel="canonical" href="https://docs.tastebuddy.io/results/charts/">
       
       
-        <link rel="prev" href="../dashboards/">
+        <link rel="prev" href="../session-dashboard/">
       
       
         <link rel="next" href="../use-cases/">
       
       
       <link rel="icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -44,6 +44,8 @@
 
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -356,7 +358,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           
@@ -481,7 +485,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
@@ -582,6 +588,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,11 +637,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboards/" class="md-nav__link">
+      <a href="../self-assessment-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Dashboards
+    Taster self assessment dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Individual product dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasting session dashboard
   </span>
   
 
@@ -733,7 +785,7 @@
                   
 
 
-<h1 id="how-to-read-the-charts">How to read the charts<a class="headerlink" href="#how-to-read-the-charts" title="Permanent link">&para;</a></h1>
+<h1 id="how-to-read-the-charts">How to read the charts<a class="headerlink" href="#how-to-read-the-charts" title="Permanent link">¶</a></h1>
 <div class="admonition tools">
 <p class="admonition-title">Work in progress</p>
 <p>This site is still under construction. Please come back later for further
@@ -801,6 +853,12 @@ information and documentation.</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -810,7 +868,7 @@ information and documentation.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../dashboards/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dashboards">
+          <a href="../session-dashboard/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tasting session dashboard">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -820,7 +878,7 @@ information and documentation.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Dashboards
+                Tasting session dashboard
               </div>
             </div>
           </a>
@@ -870,13 +928,21 @@ information and documentation.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "header.autohide", "announce.dismiss", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.annotate", "announce.dismiss", "navigation.indexes", "navigation.footer", "navigation.section", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

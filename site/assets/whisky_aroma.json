@@ -1,0 +1,1728 @@
+{
+  "data": [
+    {
+      "branchvalues": "total",
+      "domain": {
+        "x": [
+          0.0,
+          1.0
+        ],
+        "y": [
+          0.0,
+          1.0
+        ]
+      },
+      "hovertemplate": "\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003ci\u003e(Sub)Category: %{parent}\u003c\u002fi\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+      "hovertext": [
+        "cereal",
+        "dry cereals",
+        "wet cereals",
+        "malted barley",
+        "digestive biscuits",
+        "popcorn",
+        "mash",
+        "wort",
+        "malt extract",
+        "draff",
+        "porridge",
+        "green\u002fgrassy",
+        "leafy",
+        "herbal",
+        "green vegetables",
+        "geranium leaves",
+        "freshly cut grass",
+        "tomato plants",
+        "fresh herbs",
+        "dried herbs",
+        "green peppers",
+        "fresh peas",
+        "cucumber",
+        "lettuce",
+        "floral",
+        "fresh flowers",
+        "perfumed",
+        "roses",
+        "violet",
+        "lavender",
+        "fragrant",
+        "scented",
+        "fruity",
+        "fresh fruit",
+        "dried fruit",
+        "citrus",
+        "artificial fruit flavourings",
+        "apples",
+        "pears",
+        "bananas",
+        "tropical fruits",
+        "raisins",
+        "sultanas",
+        "prunes",
+        "dates",
+        "fruit cake",
+        "lemons",
+        "oranges",
+        "limes",
+        "grapefruit",
+        "bubblegum",
+        "peardrops",
+        "candy",
+        "esters",
+        "solventy",
+        "nail varnish remover",
+        "soapy",
+        "unperfumed soap",
+        "sweet",
+        "vanilla",
+        "honey",
+        "toffee",
+        "vanilla pods",
+        "ice cream",
+        "custards",
+        "honeycomb",
+        "sugar puffs",
+        "butterscotch",
+        "fudge",
+        "brown sugar",
+        "treacle",
+        "woody",
+        "oaky",
+        "new wood",
+        "toasted oak",
+        "sawdust",
+        "pencil sharpenings",
+        "resinous",
+        "nutty",
+        "coconut",
+        "nuts",
+        "toasted",
+        "dessicated coconut",
+        "coconut milk",
+        "gorse flowers",
+        "almond",
+        "peanuts",
+        "brazil nuts",
+        "hazelnuts",
+        "burnt toast",
+        "cocoa",
+        "coffee",
+        "roasted beans",
+        "spicy",
+        "dried spice",
+        "peppery",
+        "clove",
+        "cinnamon",
+        "ginger",
+        "nutmeg",
+        "black pepper",
+        "oily",
+        "buttery",
+        "oils\u002ffats",
+        "waxy",
+        "melted butter",
+        "cream",
+        "dairy",
+        "linseed oil",
+        "meat fat",
+        "greasy",
+        "engine oil",
+        "chip fat",
+        "candles",
+        "wax crayons",
+        "beeswax",
+        "sour",
+        "vinegary",
+        "cheesy",
+        "vomit",
+        "malt vinegar",
+        "acidic",
+        "blue cheese",
+        "matured cheddar",
+        "parmesan",
+        "baby sick",
+        "rancid",
+        "sulphury",
+        "cooked vegetables",
+        "rubbery",
+        "struck match",
+        "decaying",
+        "meaty",
+        "cabbage",
+        "brussels sprouts",
+        "sweetcorn",
+        "boiled potatoes",
+        "tyres",
+        "rubber tubbing",
+        "plimsols",
+        "gassy",
+        "spent fireworks",
+        "rotten vegetables",
+        "rotten eggs",
+        "beefy",
+        "bovril",
+        "marmite",
+        "stale",
+        "earthy",
+        "musty",
+        "metallic",
+        "damp soil",
+        "mushrooms",
+        "corked",
+        "damp wood",
+        "wet cardboard\u002fpaper",
+        "rust",
+        "wet iron",
+        "coins",
+        "primary tastes",
+        "sweet taste",
+        "sour taste",
+        "bitter",
+        "salty",
+        "sugar",
+        "acids",
+        "vinegar",
+        "tannins",
+        "sea salts",
+        "mouthfeel",
+        "mouth-warming",
+        "mouth-coating",
+        "astringent",
+        "alcohol burn",
+        "fiery",
+        "tingle",
+        "prickle",
+        "oily-feel",
+        "creamy-feel",
+        "viscous",
+        "drying",
+        "chalky",
+        "mouth-furring",
+        "nasal effects",
+        "pungent",
+        "prickling ",
+        "alcohol burn ",
+        "nose-warming",
+        "tingle ",
+        "peaty",
+        "burnt",
+        "smoky",
+        "medicinal",
+        "tar",
+        "char",
+        "ash",
+        "burning wood",
+        "smoked foods",
+        "barbeque",
+        "bonfire",
+        "antisceptic",
+        "TCP",
+        "carbolic soap",
+        "first aid kit",
+        "feinty",
+        "leathery",
+        "tobacco",
+        "sweaty",
+        "horse sadle",
+        "leather upholstery",
+        "worn leather",
+        "dried pipe tobacco",
+        "stale tobacco"
+      ],
+      "labels": [
+        "cereal",
+        "dry cereals",
+        "wet cereals",
+        "malted barley",
+        "digestive biscuits",
+        "popcorn",
+        "mash",
+        "wort",
+        "malt extract",
+        "draff",
+        "porridge",
+        "green\u002fgrassy",
+        "leafy",
+        "herbal",
+        "green vegetables",
+        "geranium leaves",
+        "freshly cut grass",
+        "tomato plants",
+        "fresh herbs",
+        "dried herbs",
+        "green peppers",
+        "fresh peas",
+        "cucumber",
+        "lettuce",
+        "floral",
+        "fresh flowers",
+        "perfumed",
+        "roses",
+        "violet",
+        "lavender",
+        "fragrant",
+        "scented",
+        "fruity",
+        "fresh fruit",
+        "dried fruit",
+        "citrus",
+        "artificial fruit flavourings",
+        "apples",
+        "pears",
+        "bananas",
+        "tropical fruits",
+        "raisins",
+        "sultanas",
+        "prunes",
+        "dates",
+        "fruit cake",
+        "lemons",
+        "oranges",
+        "limes",
+        "grapefruit",
+        "bubblegum",
+        "peardrops",
+        "candy",
+        "esters",
+        "solventy",
+        "nail varnish remover",
+        "soapy",
+        "unperfumed soap",
+        "sweet",
+        "vanilla",
+        "honey",
+        "toffee",
+        "vanilla pods",
+        "ice cream",
+        "custards",
+        "honeycomb",
+        "sugar puffs",
+        "butterscotch",
+        "fudge",
+        "brown sugar",
+        "treacle",
+        "woody",
+        "oaky",
+        "new wood",
+        "toasted oak",
+        "sawdust",
+        "pencil sharpenings",
+        "resinous",
+        "nutty",
+        "coconut",
+        "nuts",
+        "toasted",
+        "dessicated coconut",
+        "coconut milk",
+        "gorse flowers",
+        "almond",
+        "peanuts",
+        "brazil nuts",
+        "hazelnuts",
+        "burnt toast",
+        "cocoa",
+        "coffee",
+        "roasted beans",
+        "spicy",
+        "dried spice",
+        "peppery",
+        "clove",
+        "cinnamon",
+        "ginger",
+        "nutmeg",
+        "black pepper",
+        "oily",
+        "buttery",
+        "oils\u002ffats",
+        "waxy",
+        "melted butter",
+        "cream",
+        "dairy",
+        "linseed oil",
+        "meat fat",
+        "greasy",
+        "engine oil",
+        "chip fat",
+        "candles",
+        "wax crayons",
+        "beeswax",
+        "sour",
+        "vinegary",
+        "cheesy",
+        "vomit",
+        "malt vinegar",
+        "acidic",
+        "blue cheese",
+        "matured cheddar",
+        "parmesan",
+        "baby sick",
+        "rancid",
+        "sulphury",
+        "cooked vegetables",
+        "rubbery",
+        "struck match",
+        "decaying",
+        "meaty",
+        "cabbage",
+        "brussels sprouts",
+        "sweetcorn",
+        "boiled potatoes",
+        "tyres",
+        "rubber tubbing",
+        "plimsols",
+        "gassy",
+        "spent fireworks",
+        "rotten vegetables",
+        "rotten eggs",
+        "beefy",
+        "bovril",
+        "marmite",
+        "stale",
+        "earthy",
+        "musty",
+        "metallic",
+        "damp soil",
+        "mushrooms",
+        "corked",
+        "damp wood",
+        "wet cardboard\u002fpaper",
+        "rust",
+        "wet iron",
+        "coins",
+        "primary tastes",
+        "sweet taste",
+        "sour taste",
+        "bitter",
+        "salty",
+        "sugar",
+        "acids",
+        "vinegar",
+        "tannins",
+        "sea salts",
+        "mouthfeel",
+        "mouth-warming",
+        "mouth-coating",
+        "astringent",
+        "alcohol burn",
+        "fiery",
+        "tingle",
+        "prickle",
+        "oily-feel",
+        "creamy-feel",
+        "viscous",
+        "drying",
+        "chalky",
+        "mouth-furring",
+        "nasal effects",
+        "pungent",
+        "prickling ",
+        "alcohol burn ",
+        "nose-warming",
+        "tingle ",
+        "peaty",
+        "burnt",
+        "smoky",
+        "medicinal",
+        "tar",
+        "char",
+        "ash",
+        "burning wood",
+        "smoked foods",
+        "barbeque",
+        "bonfire",
+        "antisceptic",
+        "TCP",
+        "carbolic soap",
+        "first aid kit",
+        "feinty",
+        "leathery",
+        "tobacco",
+        "sweaty",
+        "horse sadle",
+        "leather upholstery",
+        "worn leather",
+        "dried pipe tobacco",
+        "stale tobacco"
+      ],
+      "name": "",
+      "parents": [
+        "",
+        "cereal",
+        "cereal",
+        "dry cereals",
+        "dry cereals",
+        "dry cereals",
+        "wet cereals",
+        "wet cereals",
+        "wet cereals",
+        "wet cereals",
+        "wet cereals",
+        "",
+        "green\u002fgrassy",
+        "green\u002fgrassy",
+        "green\u002fgrassy",
+        "leafy",
+        "leafy",
+        "leafy",
+        "herbal",
+        "herbal",
+        "green vegetables",
+        "green vegetables",
+        "green vegetables",
+        "green vegetables",
+        "",
+        "floral",
+        "floral",
+        "fresh flowers",
+        "fresh flowers",
+        "fresh flowers",
+        "perfumed",
+        "perfumed",
+        "",
+        "fruity",
+        "fruity",
+        "fruity",
+        "fruity",
+        "fresh fruit",
+        "fresh fruit",
+        "fresh fruit",
+        "fresh fruit",
+        "dried fruit",
+        "dried fruit",
+        "dried fruit",
+        "dried fruit",
+        "dried fruit",
+        "citrus",
+        "citrus",
+        "citrus",
+        "citrus",
+        "artificial fruit flavourings",
+        "artificial fruit flavourings",
+        "artificial fruit flavourings",
+        "artificial fruit flavourings",
+        "",
+        "solventy",
+        "",
+        "soapy",
+        "",
+        "sweet",
+        "sweet",
+        "sweet",
+        "vanilla",
+        "vanilla",
+        "vanilla",
+        "honey",
+        "honey",
+        "toffee",
+        "toffee",
+        "toffee",
+        "toffee",
+        "",
+        "woody",
+        "woody",
+        "oaky",
+        "new wood",
+        "new wood",
+        "new wood",
+        "",
+        "nutty",
+        "nutty",
+        "nutty",
+        "coconut",
+        "coconut",
+        "coconut",
+        "nuts",
+        "nuts",
+        "nuts",
+        "nuts",
+        "toasted",
+        "toasted",
+        "toasted",
+        "toasted",
+        "",
+        "spicy",
+        "spicy",
+        "dried spice",
+        "dried spice",
+        "dried spice",
+        "dried spice",
+        "peppery",
+        "",
+        "oily",
+        "oily",
+        "oily",
+        "buttery",
+        "buttery",
+        "buttery",
+        "oils\u002ffats",
+        "oils\u002ffats",
+        "oils\u002ffats",
+        "oils\u002ffats",
+        "oils\u002ffats",
+        "waxy",
+        "waxy",
+        "waxy",
+        "",
+        "sour",
+        "sour",
+        "sour",
+        "vinegary",
+        "vinegary",
+        "cheesy",
+        "cheesy",
+        "cheesy",
+        "vomit",
+        "vomit",
+        "",
+        "sulphury",
+        "sulphury",
+        "sulphury",
+        "sulphury",
+        "sulphury",
+        "cooked vegetables",
+        "cooked vegetables",
+        "cooked vegetables",
+        "cooked vegetables",
+        "rubbery",
+        "rubbery",
+        "rubbery",
+        "struck match",
+        "struck match",
+        "decaying",
+        "decaying",
+        "meaty",
+        "meaty",
+        "meaty",
+        "",
+        "stale",
+        "stale",
+        "stale",
+        "earthy",
+        "earthy",
+        "musty",
+        "musty",
+        "musty",
+        "metallic",
+        "metallic",
+        "metallic",
+        "",
+        "primary tastes",
+        "primary tastes",
+        "primary tastes",
+        "primary tastes",
+        "sweet taste",
+        "sour taste",
+        "sour taste",
+        "bitter",
+        "salty",
+        "",
+        "mouthfeel",
+        "mouthfeel",
+        "mouthfeel",
+        "mouth-warming",
+        "mouth-warming",
+        "mouth-warming",
+        "mouth-warming",
+        "mouth-coating",
+        "mouth-coating",
+        "mouth-coating",
+        "astringent",
+        "astringent",
+        "astringent",
+        "",
+        "nasal effects",
+        "nasal effects",
+        "pungent",
+        "pungent",
+        "prickling ",
+        "",
+        "peaty",
+        "peaty",
+        "peaty",
+        "burnt",
+        "burnt",
+        "burnt",
+        "smoky",
+        "smoky",
+        "smoky",
+        "smoky",
+        "medicinal",
+        "medicinal",
+        "medicinal",
+        "medicinal",
+        "",
+        "feinty",
+        "feinty",
+        "feinty",
+        "leathery",
+        "leathery",
+        "leathery",
+        "tobacco",
+        "tobacco"
+      ],
+      "values": [
+        8,
+        3,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        9,
+        3,
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        17,
+        4,
+        5,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        9,
+        3,
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        11,
+        3,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        11,
+        3,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        7,
+        2,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        14,
+        4,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        8,
+        2,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        11,
+        3,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "type": "sunburst",
+      "insidetextorientation": "radial"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmapgl": [
+          {
+            "type": "heatmapgl",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "legend": {
+      "tracegroupgap": 0
+    },
+    "title": {
+      "text": "Scotch Whisky Research Institute Aroma Wheel"
+    },
+    "sunburstcolorway": [
+      "rgb(133, 92, 117)",
+      "rgb(217, 175, 107)",
+      "rgb(175, 100, 88)",
+      "rgb(115, 111, 76)",
+      "rgb(82, 106, 131)",
+      "rgb(98, 83, 119)",
+      "rgb(104, 133, 92)",
+      "rgb(156, 156, 94)",
+      "rgb(160, 97, 119)",
+      "rgb(140, 120, 93)",
+      "rgb(124, 124, 124)"
+    ],
+    "height": 1000,
+    "width": 1000,
+    "margin": {
+      "l": 0,
+      "r": 0,
+      "t": 0,
+      "b": 0
+    },
+    "plot_bgcolor": "rgba(0, 0, 0, 0)",
+    "paper_bgcolor": "rgba(0, 0, 0, 0)"
+  }
+}

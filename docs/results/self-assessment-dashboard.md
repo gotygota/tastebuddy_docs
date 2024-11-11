@@ -113,9 +113,9 @@ bigger picture.
 
 ### Scores delta
 
-The score delta chart plots the difference $\Delta score$ between a taster's score
-and the consensus score (calculated as the mean $\overline{score}$ of all taster
-scores) for each sample in the flight, in order of service from left to right: $\Delta score = score_{taster} - \overline{score}$
+The score delta chart plots the difference &Delta;_score_ between a taster's score
+and the consensus score (calculated as the mean of all taster
+scores) for each sample in the flight, in order of service from left to right.
 
 <figure markdown="span">
 ![Delta](./images/sa_delta.webp){ loading=lazy, width="65%" }
@@ -123,8 +123,8 @@ scores) for each sample in the flight, in order of service from left to right: $
 
 For example, if you scored the first product of the flight at 88, while the
 the panel average was 80, then the first point on the left of the graph will
-be at $y=8$ on the vertical axis. A point aligned with the consensus line at
-$y=0$ would correspond to an equality between your score and that of the panel,
+be at _y=8_ on the vertical axis. A point aligned with the consensus line at
+_y=0_ would correspond to an equality between your score and that of the panel,
 while a negative value would indicate a score below the panel average.
 
 The aim is to highlight a possible **[difference in
@@ -247,13 +247,51 @@ taster's ranking and the consensus.
     the rest of the jury).
 ### Scores spread per sample
 
+Similar to the [score spread per assessor](self-assessment-dashboard.md#scores-spread-per-assessor),
+the score spread per sample is a box plot of the scores given to each sample in
+the flight, in order of service. Each of the boxes shows the distribution of the
+scores given to a sample by all judges in the panel.
+
 <figure markdown="span">
 ![Samples' scores boxplot](./images/sa_sample_boxplot.png){ loading=lazy, width="75%" }
 </figure>
 
+It provides an estimate of the [panel agreement](index.md#disagreement) per sample.
+The larger the distribution of scores for a given sample, the larger the
+differences in the scores and thus the panel disagreement. 
+
+Note, however, that both level and scaling differences in the tasters' scoring
+style can have a strong influence on this graph: a relatively large
+but fairly similar score distribution between samples could be due to a large
+level difference between the tasters; large scaling differences, in turn, could
+result in some small boxes for the "average" products, with a larger distribution
+for the higher/lower ranked products.
+
+!!! example "What to look for"
+    Keeping in mind the level and scaling differences as illustrated on the
+    [score spread per taster chart](#scores-spread-per-assessor), compare the
+    samples with the largest score distributions to your ranking and score delta: do 
+    you find your largest disagreement with the panel consensus to be for samples 
+    with a good agreement, or are they in fact the samples that failed to reach
+    consensus within the panel?
+
 ### Wordcloud
+
+The word cloud graph is a treemap of the words found in the corpus of tasting
+notes (all tasters included); it shows the relative frequency or importance of 
+the different vocables within the corpus.
 
 <figure markdown="span">
 ![Word treemap](./images/sa_treemap.png){ loading=lazy, width="75%" }
 </figure>
 
+Depending on the tasting protocol, different colours refer either to different
+categories of criteria (e.g. Nose, Palate, General, etc.) or to different
+criteria (e.g. Expressiveness in the nose, Flavour complexity on palate, etc.). A
+single colour indicates general tasting notes which are not related to a
+specific criterion.
+
+!!! info "Removed words"
+    The text corpus is first trimmed of some of the most common words (such as
+    "the", "and", "this", etc) that are not expected to provide any meaningful
+    information.
