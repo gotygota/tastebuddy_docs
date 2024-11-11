@@ -43,6 +43,8 @@
 <link href="https://fonts.bunny.net/css?family=roboto:300,300i,400,400i,700,700i|roboto-mono:400,400i,700,700i" rel="stylesheet" />
 
     
+      <link rel="stylesheet" href="../../css/timeago.css">
+    
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -168,7 +170,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Tastebuddy Documentation" class="md-header__button md-logo" aria-label="Tastebuddy Documentation" data-md-component="logo">
+    <a href="https://tastebuddy.io" title="Tastebuddy Documentation" class="md-header__button md-logo" aria-label="Tastebuddy Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -299,7 +301,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Tastebuddy Documentation" class="md-nav__button md-logo" aria-label="Tastebuddy Documentation" data-md-component="logo">
+    <a href="https://tastebuddy.io" title="Tastebuddy Documentation" class="md-nav__button md-logo" aria-label="Tastebuddy Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9V1.5h-3V9h-3V1.5h-3V9h-3V1.5H4.65V9H3v1.5h18V9zm0 4.5h-3V21h-3v-7.5h-3V21h-3v-7.5H4.65V21H3v1.5h18V21h-1.5z"/></svg>
@@ -1098,9 +1100,23 @@ zoom out;</li>
 </ul>
 </div>
 <h3 id="sample-ranking">Sample ranking<a class="headerlink" href="#sample-ranking" title="Permanent link">¶</a></h3>
+<p>The sample ranking shows the average scores of all the samples of the flights,
+ranked from higher (top) to lower (bottom) score, in comparison to your own scores.</p>
 <figure>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/sa_sample_ranking.png"><img alt="Sample ranking" loading="lazy," src="../images/sa_sample_ranking.png" width="75%"/></a>
 </figure>
+<div class="admonition example">
+<p class="admonition-title">What to look for</p>
+<p>This is a first overview of your results for the session; you should already
+be able to see if you are following the same trends as the consensus, with
+similar rankings.</p>
+<p>Level and scaling differences should also be apparent: if your scores are <strong>consistently</strong>
+fairly higher or lower than the consensus average, your may want to adjust your scoring to be harsher
+or conversely more generous. If you notice that the differences
+between your scores and the consensus scores seem to be higher for the higher or lower
+points, there may be a large scaling difference between you and the rest of the
+panel.</p>
+</div>
 <h3 id="scores-delta">Scores delta<a class="headerlink" href="#scores-delta" title="Permanent link">¶</a></h3>
 <p>The score delta chart plots the difference Δ<em>score</em> between a taster's score
 and the consensus score (calculated as the mean of all taster
@@ -1274,6 +1290,38 @@ information.</p>
 
 
 
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-11T16:00:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-11</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-08T12:33:15+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-08</span>
+  </span>
+
+    
+    
+    
+  </aside>
 
 
   
@@ -1426,6 +1474,10 @@ information.</p>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/timeago.min.js"></script>
+      
+        <script src="../../js/timeago_mkdocs_material.js"></script>
       
         <script src="../../js/open_in_new_tab.js"></script>
       
