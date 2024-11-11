@@ -70,6 +70,7 @@ extra:
   social:
     - icon: material/glass-tulip
       link: https://tastebuddy.io
+  homepage: https://tastebuddy.io
 
 plugins:
   - search
@@ -77,6 +78,10 @@ plugins:
   - glightbox
   - material-plausible
   - plotly
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      type: timeago
   # - privacy
 
 markdown_extensions:

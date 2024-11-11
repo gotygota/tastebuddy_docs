@@ -107,9 +107,24 @@ bigger picture.
 
 ### Sample ranking
 
+The sample ranking shows the average scores of all the samples of the flights,
+ranked from higher (top) to lower (bottom) score, in comparison to your own scores.
+
 <figure markdown="span">
 ![Sample ranking](./images/sa_sample_ranking.png){ loading=lazy, width="75%" }
 </figure>
+
+!!! example "What to look for"
+    This is a first overview of your results for the session; you should already
+    be able to see if you are following the same trends as the consensus, with
+    similar rankings.
+
+    Level and scaling differences should also be apparent: if your scores are **consistently**
+    fairly higher or lower than the consensus average, your may want to adjust your scoring to be harsher
+    or conversely more generous. If you notice that the differences
+    between your scores and the consensus scores seem to be higher for the higher or lower
+    points, there may be a large scaling difference between you and the rest of the
+    panel.
 
 ### Scores delta
 
