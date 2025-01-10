@@ -193,7 +193,7 @@ level differences between the assessors) and the influence of the position of
 the sample within the tasting flight is reduced (thus providing a more
 meaningful analysis of taster variability). However, scale differences are not
 affected and require further careful analysis and/or data pre-processing (see
-section 1.3 Product or taster differences?).
+section [Product or taster differences](index.md#product-or-taster-differences)).
 
 !!! tip "About anonymity"
     Sensory analysis is meaningless unless the anonymity of both the tasters and the
