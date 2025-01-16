@@ -4,7 +4,7 @@
     This site is still under construction. Please come back later for further
     information and documentation.
 
-## Principal Components Analysis
+## Principal Component Analysis
 
 ### Theoretical introduction
 This section is for information only and may be disregarded. For an
@@ -114,9 +114,9 @@ samples or is actually rather meaningless.
     are given below, with PC1 represented in the _x_-axis and PC2 on _y_-axis.
 
     <figure markdown="span">
-        ![PCA on tasting criteria](images/pca_criteria_illustration.png){ loading=lazy, width="80%" }
-        <figcaption>Illustration of a PCA on tasting criteria for an ageing
-        sample of rum</figcaption>
+        ![PCA on tasting criteria](images/pca_criteria_illustration.png){ loading=lazy, width="60%" }
+        <figcaption>Illustration of a PCA on tasting criteria for a
+        sample of rum during maturation</figcaption>
     </figure>
 
     From the chart, we can conclude that:
@@ -219,7 +219,7 @@ represent 5 different _features_: they can be seen as panelists or sensory
 characteristics of the products.
 
 <figure markdown="span">
-    ![Correlation loadings plot illustration](images/loadings_example.png){ loading=lazy, width="90%" }
+    ![Correlation loadings plot illustration](images/loadings_example.png){ loading=lazy, width="60%" }
     <figcaption>Example of a plot obtained from applying PCA on sensory data. The points from A to E represent the _features_</figcaption>
 </figure>
 

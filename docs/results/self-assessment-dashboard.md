@@ -55,7 +55,8 @@ and click `View results` in the table next to the relevant session.
     Although dashboards can be accessed from a mobile device such as a smartphone,
     there must be enough screen space needs to view the charts. We strongly recommend
     that you view the dashboards on a desktop or tablet screen, as a smartphone
-    tends to cut off the charts, making them difficult to read.
+    tends to cut off the charts, making them difficult to read and interact
+    with.
 
 ## Dashboard overview
 Your self-assessment dashboard is designed to compare your results with the
